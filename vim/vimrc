@@ -1,0 +1,39 @@
+" .vimrc
+" Author: Nick Platt
+
+set nocompatible
+execute pathogen#infect()
+
+syntax on
+filetype plugin on
+filetype indent on
+scriptencoding utf-8
+
+
+if (&t_Co > 8)
+  colorscheme atlas
+else
+  colorscheme atlas8
+endif
+
+
+source $HOME/.vim/functions.vim
+source $HOME/.vim/mappings.vim
+source $HOME/.vim/options.vim
+source $HOME/.vim/plugins.vim
+
+
+augroup _
+   autocmd!
+
+   " Reload .vimrc on write
+   autocmd BufWritePost $HOME/.vimrc source $HOME/.vimrc
+
+   " Exit insert mode on idle
+   autocmd CursorHoldI * stopinsert
+   autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=15000
+   autocmd InsertLeave * let &updatetime=updaterestore
+
+   " Remove trailing whitespace on write
+   autocmd BufWritePre * :call TrimTrailingWhitespace()
+augroup END

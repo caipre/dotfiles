@@ -1,0 +1,17 @@
+[user]
+   name = Nick Platt
+   email = platt.nicholas@gmail.com
+[alias]
+   lg = log --pretty=format:'%C(yellow)%h%C(reset)  %s  %C(bold black)[%an]%C(reset)'
+   can = commit --amend --no-edit
+[color]
+   ui = true
+[core]
+   excludesfile = ~/.gitignore
+   pager = cat && echo
+[diff]
+   statGraphWidth = 20
+[pull]
+   rebase = true
+[push]
+   default = current

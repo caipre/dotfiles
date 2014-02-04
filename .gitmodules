@@ -1,0 +1,45 @@
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = git@github.com:kien/ctrlp.vim
+[submodule "vim/bundle/delimitmate"]
+	path = vim/bundle/delimitmate
+	url = git@github.com:Raimondi/delimitMate
+[submodule "vim/bundle/polyglot"]
+	path = vim/bundle/polyglot
+	url = git@github.com:sheerun/vim-polyglot
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = git@github.com:msanders/snipmate.vim
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = git@github.com:ervandew/supertab
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git@github.com:tpope/vim-surround
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar
+[submodule "vim/bundle/vdebug"]
+	path = vim/bundle/vdebug
+	url = git@github.com:joonty/vdebug
+[submodule "vim/bundle/multiple-cursors"]
+	path = vim/bundle/multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors
+[submodule "vim/bundle/youcompleteme"]
+	path = vim/bundle/youcompleteme
+	url = git@github.com:Valloric/YouCompleteMe
+[submodule "vim/bundle/commentary"]
+	path = vim/bundle/commentary
+	url = git@github.com:tpope/vim-commentary
+[submodule "vim/bundle/togglecursor"]
+	path = vim/bundle/togglecursor
+	url = git@github.com:jszakmeister/vim-togglecursor
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = git@github.com:tpope/vim-fugitive
+[submodule "vim/pathogen"]
+	path = vim/pathogen
+	url = git@github.com:tpope/vim-pathogen
+[submodule "vim/bundle/localvimrc"]
+	path = vim/bundle/localvimrc
+	url = git@github.com:embear/vim-localvimrc
