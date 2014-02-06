@@ -4,8 +4,8 @@
 function set_cursor_style () {
    if [[ -n "$PUTTY" ]]; then
       case "$1" in
-         "vertical-bar") local csi='e[34h' ;;
-         "block")        local csi='e[34l' ;;
+         "vertical-bar") local csi='\033[=1c' ;;
+         "block")        local csi='\033[=2c' ;;
       esac
    else
       case "$1" in
