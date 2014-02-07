@@ -5,7 +5,7 @@
    lg = log --pretty=format:'%C(yellow)%h%C(reset)  %s  %C(bold black)[%an]%C(reset)'
    can = commit --amend --no-edit
 [color]
-   ui = true
+   ui = always
 [core]
    excludesfile = ~/.gitignore
    pager = cat && echo
