@@ -21,9 +21,9 @@ let g:colors_name = 'atlas'
 "ighlight CursorIM                   ctermfg=000     ctermbg=000      cterm=none
 highlight CursorLine                 ctermfg=none    ctermbg=233      cterm=none
 highlight CursorLineNr               ctermfg=238     ctermbg=none     cterm=none
-"ighlight DiffAdd                    ctermfg=000     ctermbg=000      cterm=none
-"ighlight DiffChange                 ctermfg=000     ctermbg=000      cterm=none
-"ighlight DiffDelete                 ctermfg=000     ctermbg=000      cterm=none
+highlight DiffAdd                    ctermfg=none    ctermbg=029      cterm=none
+highlight DiffChange                 ctermfg=none    ctermbg=238      cterm=none
+highlight DiffDelete                 ctermfg=none    ctermbg=009      cterm=none
 "ighlight DiffText                   ctermfg=000     ctermbg=000      cterm=none
 highlight Directory                  ctermfg=031     ctermbg=none     cterm=none
 highlight ErrorMsg                   ctermfg=009     ctermbg=none     cterm=none
