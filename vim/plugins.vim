@@ -14,3 +14,7 @@ let g:ctrlp_working_path_mode = 'rw'
 
 " delimitmate
 let g:delimitMate_expand_cr = 1
+
+" localvimrc
+let g:localvimrc_persistent = 2
+let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
