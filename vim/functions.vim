@@ -13,7 +13,10 @@ function! TrimTrailingWhitespace()
    let column = col(".")
 
    " Remove trailing whitespace, leaving pure-whitespace lines intact
-   %s/\(^\|\s\)@<!\s\+$//eg
+   "%s/\(^\|\s\)@<!\s\+$//eg
+
+   " Remove all trailing whitespace
+   %s/\s\+$//eg
 
    let @/=last_search_query
    call cursor(line, column)
