@@ -43,3 +43,6 @@
 [submodule "vim/bundle/localvimrc"]
 	path = vim/bundle/localvimrc
 	url = git@github.com:embear/vim-localvimrc
+[submodule "vim/bundle/sneak"]
+	path = vim/bundle/sneak
+	url = git@github.com:justinmk/vim-sneak
