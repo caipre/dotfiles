@@ -23,7 +23,7 @@ function tmux_escape () {
    if [[ -n "$TMUX" ]]; then
       csi='\033Ptmux;'${csi//'\033'/'\033\033'}'\033\134'
    fi
-   
+
    if [[ -n "$TMUX_NESTED" ]]; then
       csi='\033Ptmux;'${csi//'\033'/'\033\033'}'\033\134'
    fi
@@ -42,6 +42,18 @@ function zle-line-init zle-keymap-select {
       set_cursor_style block
    fi
 }
-
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# Thanks to osse and m0viefreak for this
+function self-insert() {
+   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
+   zle reset-prompt
+   zle .self-insert
+}
+zle -N self-insert
+
+function zle-line-finish() {
+   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%}"
+}
+zle -N zle-line-finish

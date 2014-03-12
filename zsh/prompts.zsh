@@ -1,5 +1,6 @@
 # prompts.zsh
 # Author: Nick Platt
 
-PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
-RPROMPT='%~'
+autoload -U colors && colors
+PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%}"
+#RPROMPT=''
