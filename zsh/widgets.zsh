@@ -54,6 +54,6 @@ function self-insert() {
 zle -N self-insert
 
 function zle-line-finish() {
-   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%}"
+   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%} "
 }
 zle -N zle-line-finish
