@@ -6,6 +6,7 @@ nnoremap          <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap <silent> <leader>, :silent! /arst$<CR>
 nnoremap <silent> <leader>. :set spell!<CR>
 nnoremap <silent> <leader>h :set hlsearch!<CR>
+nnoremap          <leader>f :CtrlPFunky<CR>
 nnoremap <silent> <leader>p :set paste!<CR>
 nnoremap <silent> <leader>t :tnext<CR>
 nnoremap <silent> <leader>w :set list!<CR>

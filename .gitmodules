@@ -46,3 +46,6 @@
 [submodule "vim/bundle/sneak"]
 	path = vim/bundle/sneak
 	url = git@github.com:justinmk/vim-sneak
+[submodule "vim/bundle/ctrlp-funky"]
+	path = vim/bundle/ctrlp-funky
+	url = git@github.com:tacahiroy/ctrlp-funky
