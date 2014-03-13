@@ -70,7 +70,7 @@ highlight Constant                   ctermfg=250     ctermbg=none     cterm=none
 "ighlight Debug                      ctermfg=none    ctermbg=none     cterm=none
 "ighlight Define                     ctermfg=none    ctermbg=none     cterm=none
 "ighlight Delimiter                  ctermfg=none    ctermbg=none     cterm=none
-"ighlight Error                      ctermfg=none    ctermbg=none     cterm=none
+highlight Error                      ctermfg=224     ctermbg=none     cterm=none
 "ighlight Exception                  ctermfg=none    ctermbg=none     cterm=none
 "ighlight Float                      ctermfg=none    ctermbg=none     cterm=none
 highlight Function                   ctermfg=221     ctermbg=none     cterm=none
@@ -85,12 +85,12 @@ highlight Operator                   ctermfg=244     ctermbg=none     cterm=none
 "ighlight PreCondit                  ctermfg=none    ctermbg=none     cterm=none
 highlight PreProc                    ctermfg=073     ctermbg=none     cterm=none
 highlight Repeat                     ctermfg=none    ctermbg=none     cterm=none
-highlight Special                    ctermfg=250     ctermbg=none     cterm=none
+highlight Special                    ctermfg=244     ctermbg=none     cterm=none
 "ighlight SpecialChar                ctermfg=none    ctermbg=none     cterm=none
 "ighlight SpecialComment             ctermfg=none    ctermbg=none     cterm=none
-highlight Statement                  ctermfg=036     ctermbg=none     cterm=none
+highlight Statement                  ctermfg=030     ctermbg=none     cterm=none
 "ighlight StorageClass               ctermfg=none    ctermbg=none     cterm=none
-highlight String                     ctermfg=066     ctermbg=none     cterm=none " 059 also an option
+highlight String                     ctermfg=059     ctermbg=none     cterm=none
 "ighlight Structure                  ctermfg=none    ctermbg=none     cterm=none
 "ighlight Tag                        ctermfg=none    ctermbg=none     cterm=none
 highlight Todo                       ctermfg=244     ctermbg=none     cterm=none
@@ -136,7 +136,9 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 
 " php
 highlight phpRegion                  ctermfg=250     ctermbg=none     cterm=none
-"ighlight phpBoolean                 ctermfg=172     ctermbg=none     cterm=bold
+highlight phpBoolean                 ctermfg=222     ctermbg=none     cterm=none
+highlight phpConstants               ctermfg=203     ctermbg=none     cterm=none
+highlight phpCommentTitle            ctermfg=244     ctermbg=none    cterm=none
 "ighlight phpConditional             ctermfg=035     ctermbg=none     cterm=none
 "ighlight phpOperator                ctermfg=248     ctermbg=none     cterm=none
 "ighlight phpRepeat                  ctermfg=035     ctermbg=none     cterm=none
