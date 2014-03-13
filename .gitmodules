@@ -49,3 +49,6 @@
 [submodule "vim/bundle/ctrlp-funky"]
 	path = vim/bundle/ctrlp-funky
 	url = git@github.com:tacahiroy/ctrlp-funky
+[submodule "vim/bundle/tagbar-phpctags"]
+	path = vim/bundle/tagbar-phpctags
+	url = git@github.com:vim-php/tagbar-phpctags.vim
