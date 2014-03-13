@@ -33,7 +33,7 @@
 	url = git@github.com:tpope/vim-commentary
 [submodule "vim/bundle/togglecursor"]
 	path = vim/bundle/togglecursor
-	url = git@github.com:jszakmeister/vim-togglecursor
+	url = git@github.com:caipre/vim-togglecursor
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = git@github.com:tpope/vim-fugitive
