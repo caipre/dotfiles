@@ -23,3 +23,10 @@ let g:delimitMate_expand_cr = 1
 " localvimrc
 let g:localvimrc_persistent = 2
 let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
+
+" tagbar
+let g:tagbar_autofocus = 1
+let g:tagbar_iconchars = ['► ', '▼ ']
+let g:tagbar_left = 1
+let g:tagbar_show_visibility = 0
+let g:tagbar_sort = 1

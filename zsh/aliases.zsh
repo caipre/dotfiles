@@ -3,6 +3,7 @@
 
 alias ..='cd ..'
 alias diff='diff -s'
+alias g='grep'
 alias grep='grep -P'
 alias ll='ls -lahF --group-directories-first'
 alias mkdir='mkdir -p'
