@@ -9,3 +9,35 @@ source $HOME/.zsh/functions.zsh
 source $HOME/.zsh/options.zsh
 source $HOME/.zsh/prompts.zsh
 source $HOME/.zsh/widgets.zsh
+
+# SSH Agent
+function agent_active () {
+   if [[ -n "$SSH_AUTH_SOCK" ]]; then
+      ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
+   else
+      false
+   fi
+}
+
+function agent_start () {
+   (umask 077; ssh-agent > $HOME/.ssh/agent.$HOSTNAME)
+   source $HOME/.ssh/agent.$HOSTNAME >/dev/null 2>&1
+   ssh-add $HOME/.ssh/*-rsa > /dev/null 2>&1
+}
+
+function agent_check () {
+   if ! agent_active; then
+      source $HOME/.ssh/agent.$HOSTNAME >/dev/null 2>&1
+   fi
+
+   if ! agent_active; then
+      echo -n "ssh-agent? "
+      if read -q; then
+         echo
+         agent_start
+      else
+         echo
+      fi
+   fi
+}
+agent_check
