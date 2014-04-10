@@ -13,7 +13,7 @@ source $HOME/.zsh/widgets.zsh
 # SSH Agent
 function agent_active () {
    if [[ -n "$SSH_AUTH_SOCK" ]]; then
-      ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
+      ssh-add -l > /dev/null 2>&1 || [ $? -eq 1 ]
    else
       false
    fi
@@ -27,16 +27,22 @@ function agent_start () {
 
 function agent_check () {
    if ! agent_active; then
-      source $HOME/.ssh/agent.$HOSTNAME >/dev/null 2>&1
+      grep $HOSTNAME $HOME/.ssh/agent.ignore > /dev/null 2>&1
+      if [[ $? -eq 0 ]]; then
+        return 1;
+      fi
+
+      source $HOME/.ssh/agent.$HOSTNAME > /dev/null 2>&1
    fi
 
    if ! agent_active; then
       echo -n "ssh-agent? "
       if read -q; then
-         echo
+         echo;
          agent_start
       else
-         echo
+         echo;
+         echo $HOSTNAME >> $HOME/.ssh/agent.ignore;
       fi
    fi
 }
