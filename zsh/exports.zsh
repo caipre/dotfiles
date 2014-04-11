@@ -15,10 +15,10 @@ export LESS='-Ri'
 export GREP_COLOR='1;32'
 
 # Color less
-export LESS_TERMCAP_mb=$'\e[31m'
-export LESS_TERMCAP_md=$'\e[38;5;066m'
+export LESS_TERMCAP_mb=$'\e[38;5;96m'           # blinking
+export LESS_TERMCAP_md=$'\e[38;5;250m'          # bold
 export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[48;5;235m'
+export LESS_TERMCAP_so=$'\e[38;5;235;48;5;221m' # standout mode
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[38;5;066m'
+export LESS_TERMCAP_us=$'\e[04;38;5;238m'       # underline
 export LESS_TERMCAP_ue=$'\e[0m'
