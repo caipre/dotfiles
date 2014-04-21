@@ -8,10 +8,7 @@ set cursorline
 set complete=.,w,i,t
 set expandtab
 set fileformat=unix
-set foldenable
-set foldlevelstart=100
-set foldmethod=indent
-set formatoptions=tcroqnlj
+set formatoptions=tcroqnl
 set history=100
 set hlsearch
 set ignorecase
@@ -22,7 +19,6 @@ set linebreak
 set list
 set listchars=tab:·-,trail:_,eol:¬,extends:»,precedes:«
 set matchtime=2
-set mouse=a
 set number
 set scrolloff=5
 set shiftround
@@ -45,3 +41,11 @@ set virtualedit=onemore
 set wildignore=*/.git*,*/.svn/*
 set wildmenu
 set wildmode=full
+
+if v:version >= 703
+   set foldenable
+   set foldlevelstart=100
+   set foldmethod=indent
+   set formatoptions+=j
+   set mouse=a
+endif
