@@ -47,8 +47,10 @@ zle -N zle-keymap-select
 
 # Thanks to osse and m0viefreak for this
 function self-insert() {
-   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
-   zle reset-prompt
+   if [[ "$PROMPT" =~ %~ ]]; then
+      PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
+      zle reset-prompt
+   fi
    zle .self-insert
 }
 zle -N self-insert
