@@ -7,6 +7,7 @@ alias g='grep'
 alias grep='grep -P'
 alias ll='ls -lahF --group-directories-first --time-style long-iso'
 alias mkdir='mkdir -p'
+alias mv='mv --no-clobber'
 alias q=exit
 alias rs='source ~/.zshrc; reset'
 

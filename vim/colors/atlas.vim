@@ -62,7 +62,7 @@ highlight WildMenu                   ctermfg=253     ctermbg=024      cterm=none
 
 
 """ Standard Groups
-"ighlight Boolean                    ctermfg=none    ctermbg=none     cterm=none
+highlight Boolean                    ctermfg=222     ctermbg=none     cterm=none
 "ighlight Character                  ctermfg=none    ctermbg=none     cterm=none
 highlight Comment                    ctermfg=238     ctermbg=none     cterm=none
 "ighlight Conditional                ctermfg=none    ctermbg=none     cterm=none
@@ -88,7 +88,7 @@ highlight Repeat                     ctermfg=none    ctermbg=none     cterm=none
 highlight Special                    ctermfg=244     ctermbg=none     cterm=none
 "ighlight SpecialChar                ctermfg=none    ctermbg=none     cterm=none
 "ighlight SpecialComment             ctermfg=none    ctermbg=none     cterm=none
-highlight Statement                  ctermfg=030     ctermbg=none     cterm=none
+highlight Statement                  ctermfg=029     ctermbg=none     cterm=none
 "ighlight StorageClass               ctermfg=none    ctermbg=none     cterm=none
 highlight String                     ctermfg=059     ctermbg=none     cterm=none
 "ighlight Structure                  ctermfg=none    ctermbg=none     cterm=none
@@ -108,6 +108,10 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 "ighlight cType                      ctermfg=075     ctermbg=none     cterm=none
 
 " css
+highlight cssBoxProp                 ctermfg=073     ctermbg=none     cterm=none
+highlight cssColorProp               ctermfg=073     ctermbg=none     cterm=none
+highlight cssFontProp                ctermfg=073     ctermbg=none     cterm=none
+highlight cssTextProp                ctermfg=073     ctermbg=none     cterm=none
 "ighlight cssClassName               ctermfg=gray    ctermbg=none     cterm=none
 "ighlight cssColor                   ctermfg=red     ctermbg=none     cterm=bold
 "ighlight cssIdentifier              ctermfg=255     ctermbg=none     cterm=bold
@@ -118,6 +122,8 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 "ighlight diffRemoved                ctermfg=red     ctermbg=none     cterm=bold
 
 " html
+highlight htmlTag                    ctermfg=238     ctermbg=none     cterm=bold
+highlight htmlEndTag                 ctermfg=238     ctermbg=none     cterm=bold
 "ighlight htmlArg                    ctermfg=237     ctermbg=none     cterm=bold
 "ighlight htmlEvent                  ctermfg=237     ctermbg=none     cterm=bold
 "ighlight htmlSpecialTagName         ctermfg=075     ctermbg=none     cterm=none
@@ -125,6 +131,15 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 "ighlight htmlTagName                ctermfg=075     ctermbg=none     cterm=none
 
 " javascript
+highlight jsFunction                 ctermfg=029     ctermbg=none     cterm=none
+highlight jsFuncCall                 ctermfg=248     ctermbg=none     cterm=none
+highlight jsStorageClass             ctermfg=238     ctermbg=none     cterm=none
+highlight jsThis                     ctermfg=067     ctermbg=none     cterm=none
+highlight jsDocTags                  ctermfg=238     ctermbg=none     cterm=none
+highlight jsDocParam                 ctermfg=238     ctermbg=none     cterm=none
+highlight jsDocComment               ctermfg=240     ctermbg=none     cterm=none
+highlight jsFunctionKey              ctermfg=073     ctermbg=none     cterm=none
+highlight jsObjectKey                ctermfg=073     ctermbg=none     cterm=none
 "ighlight javaScriptRegexpstring     ctermfg=172     ctermbg=none     cterm=none
 "ighlight javaScriptStatement        ctermfg=035     ctermbg=none     cterm=none
 
@@ -138,11 +153,13 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 highlight phpRegion                  ctermfg=250     ctermbg=none     cterm=none
 highlight phpBoolean                 ctermfg=222     ctermbg=none     cterm=none
 highlight phpConstants               ctermfg=203     ctermbg=none     cterm=none
-highlight phpCommentTitle            ctermfg=244     ctermbg=none    cterm=none
+highlight phpCommentTitle            ctermfg=244     ctermbg=none     cterm=none
+highlight phpMethodsVar              ctermfg=250     ctermbg=none     cterm=none
+highlight phpDocTags                 ctermfg=238     ctermbg=none     cterm=none
 "ighlight phpConditional             ctermfg=035     ctermbg=none     cterm=none
 "ighlight phpOperator                ctermfg=248     ctermbg=none     cterm=none
 "ighlight phpRepeat                  ctermfg=035     ctermbg=none     cterm=none
-"ighlight phpStatement               ctermfg=035     ctermbg=none     cterm=none
+highlight phpStatement               ctermfg=072     ctermbg=none     cterm=none
 
 " ruby
 "ighlight rubyBoolean                ctermfg=172     ctermbg=none     cterm=bold
