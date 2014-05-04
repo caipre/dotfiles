@@ -1,0 +1,5 @@
+zsh/.zcompdump
+zsh/.histfile
+vim/.viminfo
+vim/.netrwhist
+vim/ctrlp-cache
