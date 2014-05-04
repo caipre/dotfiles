@@ -10,6 +10,8 @@ source $HOME/.zsh/options.zsh
 source $HOME/.zsh/prompts.zsh
 source $HOME/.zsh/widgets.zsh
 
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+
 # SSH Agent
 function agent_active () {
    if [[ -n "$SSH_AUTH_SOCK" ]]; then
