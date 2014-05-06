@@ -69,7 +69,7 @@ highlight Comment                    ctermfg=238     ctermbg=none     cterm=none
 highlight Constant                   ctermfg=250     ctermbg=none     cterm=none
 "ighlight Debug                      ctermfg=none    ctermbg=none     cterm=none
 "ighlight Define                     ctermfg=none    ctermbg=none     cterm=none
-"ighlight Delimiter                  ctermfg=none    ctermbg=none     cterm=none
+highlight Delimiter                  ctermfg=066     ctermbg=none     cterm=none
 highlight Error                      ctermfg=224     ctermbg=none     cterm=none
 "ighlight Exception                  ctermfg=none    ctermbg=none     cterm=none
 "ighlight Float                      ctermfg=none    ctermbg=none     cterm=none
@@ -77,7 +77,7 @@ highlight Function                   ctermfg=221     ctermbg=none     cterm=none
 highlight Identifier                 ctermfg=067     ctermbg=none     cterm=none
 "ighlight Ignore                     ctermfg=none    ctermbg=none     cterm=none
 "ighlight Include                    ctermfg=none    ctermbg=none     cterm=none
-highlight Keyword                    ctermfg=036     ctermbg=none     cterm=none
+highlight Keyword                    ctermfg=029     ctermbg=none     cterm=none
 "ighlight Label                      ctermfg=none    ctermbg=none     cterm=none
 "ighlight Macro                      ctermfg=none    ctermbg=none     cterm=none
 highlight Number                     ctermfg=250     ctermbg=none     cterm=none
