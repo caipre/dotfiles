@@ -37,8 +37,12 @@ function tmux_escape () {
 
 function zle-line-init zle-keymap-select {
    if [[ "$KEYMAP" =~ "(main|viins)" ]]; then
+      short_prompt
+      zle reset-prompt
       set_cursor_style vertical-bar
    elif [[ "$KEYMAP" = "vicmd" ]]; then
+      short_prompt
+      zle reset-prompt
       set_cursor_style block
    fi
 }
@@ -47,8 +51,8 @@ zle -N zle-keymap-select
 
 # Thanks to osse and m0viefreak for this
 function self-insert() {
-   if [[ "$PROMPT" =~ %~ ]]; then
-      PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
+   if $LONG_PROMPT; then
+      short_prompt
       zle reset-prompt
    fi
    zle .self-insert
@@ -56,6 +60,6 @@ function self-insert() {
 zle -N self-insert
 
 function zle-line-finish() {
-   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%} "
+   long_prompt
 }
 zle -N zle-line-finish
