@@ -12,7 +12,7 @@ export LC_COLLATE='C'
 
 # Miscellaneous
 export LESS='-Ri'
-export GREP_COLOR='1;32'
+export GREP_COLORS='fn=38;5;234:ms=38;5;29'
 
 # Color less
 export LESS_TERMCAP_mb=$'\e[38;5;96m'           # blinking

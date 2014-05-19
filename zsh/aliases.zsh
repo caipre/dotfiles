@@ -4,7 +4,7 @@
 alias ..='cd ..'
 alias diff='diff -s'
 alias g='grep'
-alias grep='grep -P'
+alias grep='grep -P --color=always'
 alias ll='ls -lahF --group-directories-first --time-style long-iso --color'
 alias mkdir='mkdir -p'
 alias mv='mv --no-clobber'
