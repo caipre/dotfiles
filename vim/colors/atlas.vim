@@ -84,7 +84,7 @@ highlight Number                     ctermfg=250     ctermbg=none     cterm=none
 highlight Operator                   ctermfg=244     ctermbg=none     cterm=none
 "ighlight PreCondit                  ctermfg=none    ctermbg=none     cterm=none
 highlight PreProc                    ctermfg=073     ctermbg=none     cterm=none
-highlight Repeat                     ctermfg=none    ctermbg=none     cterm=none
+highlight Repeat                     ctermfg=029     ctermbg=none     cterm=none
 highlight Special                    ctermfg=244     ctermbg=none     cterm=none
 "ighlight SpecialChar                ctermfg=none    ctermbg=none     cterm=none
 "ighlight SpecialComment             ctermfg=none    ctermbg=none     cterm=none

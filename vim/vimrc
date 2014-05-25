@@ -2,7 +2,7 @@
 " Author: Nick Platt
 
 set nocompatible
-let g:pathogen_disabled = ['youcompleteme', 'snipmate']
+let g:pathogen_disabled = ['youcompleteme', 'snipmate', 'vdebug']
 execute pathogen#infect()
 
 syntax on
