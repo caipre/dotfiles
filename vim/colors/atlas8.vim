@@ -69,9 +69,9 @@ highlight Number                      ctermfg=white   ctermbg=none     cterm=non
 highlight String                      ctermfg=white   ctermbg=none     cterm=none
 highlight Function                    ctermfg=white   ctermbg=none     cterm=bold
 highlight Identifier                  ctermfg=cyan    ctermbg=none     cterm=none
-highlight Keyword                     ctermfg=white   ctermbg=none     cterm=none
+highlight Keyword                     ctermfg=green   ctermbg=none     cterm=none
 highlight Statement                   ctermfg=gray    ctermbg=none     cterm=none
-"ighlight Conditional                 ctermfg=        ctermbg=         cterm=
+highlight Conditional                 ctermfg=green   ctermbg=none     cterm=none
 "ighlight Repeat                      ctermfg=        ctermbg=         cterm=
 "ighlight Repeat                      ctermfg=        ctermbg=         cterm=
 "ighlight Label                       ctermfg=        ctermbg=         cterm=

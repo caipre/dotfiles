@@ -20,13 +20,19 @@ function mkmv () {
 }
 
 function clrs () {
+   colors=$(tput colors)
+
    for r in {0..1}; do
       for c in {0..7}; do
-         local code=$(( ($r*8)+$c ))
-         printf "\033[38;5;${code}m%02d\033[39m " $(( $code % 100 ))
+         local code=$(( 30+$c ))
+         printf "\033[$r;${code}m%02s\033[39m " "x"
       done
       print
    done
+
+   if [[ $colors -le 8 ]]; then
+      return;
+   fi
 
    for r in {0..5}; do
       for c in {0..35}; do
