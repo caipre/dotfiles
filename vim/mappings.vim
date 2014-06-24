@@ -13,6 +13,8 @@ nnoremap <silent> <leader>w :set list!<CR>
 
 vnoremap <silent> <leader>s :sort<CR>
 
+cnoremap <C-A>         <Home>
+cnoremap <C-E>         <End>
 
 nnoremap <BACKSPACE>   hx
 nnoremap <C-H>         <C-W>h
@@ -23,3 +25,4 @@ nnoremap <C-N>         :tabnew<CR>
 nnoremap <CR>          o<ESC>
 nnoremap <SPACE>       i<SPACE><ESC>l
 nnoremap <TAB>         i<TAB><ESC>l
+nnoremap Y             y$

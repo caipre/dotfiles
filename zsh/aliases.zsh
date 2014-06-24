@@ -7,9 +7,10 @@ alias g='grep'
 alias grep='grep -P --color=always'
 alias ll='ls -lahF --group-directories-first --time-style long-iso --color'
 alias mkdir='mkdir -p'
-alias mv='mv --no-clobber'
+#lias mv='mv --no-clobber'
 alias q=exit
 alias rs='source ~/.zshrc; reset'
+alias sun='sort | uniq -c | sort -rn'
 
 # git
 alias br='git branch'
