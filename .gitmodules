@@ -52,3 +52,6 @@
 [submodule "vim/bundle/tagbar-phpctags"]
 	path = vim/bundle/tagbar-phpctags
 	url = git@github.com:vim-php/tagbar-phpctags.vim
+[submodule "vim/bundle/vinegar"]
+	path = vim/bundle/vinegar
+	url = https://github.com/tpope/vim-vinegar
