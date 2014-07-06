@@ -4,7 +4,7 @@
 autoload -U colors && colors
 function short_prompt () {
    PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "
-   RPROMPT=""
+   RPROMPT="%m"
    LONG_PROMPT=false
 }
 
