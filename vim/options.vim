@@ -6,6 +6,7 @@ set backspace=indent,eol,start
 set cindent
 set cursorline
 set complete=.,w,i,t
+set directory=$HOME/.swp
 set expandtab
 set fileformat=unix
 set formatoptions=tcroqnl
@@ -40,7 +41,7 @@ set viminfo+=n$HOME/.vim/.viminfo
 set virtualedit=onemore
 set wildignore=*/.git*,*/.svn/*
 set wildmenu
-set wildmode=full
+set wildmode=list:longest,full
 
 if v:version >= 703
    set foldenable
