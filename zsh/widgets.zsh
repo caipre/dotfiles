@@ -52,11 +52,13 @@ function zle-keymap-select {
 }
 zle -N zle-keymap-select
 
-function self-insert {
+function self-insert up-line-or-history history-incremental-search-backward {
    if "${LONG_PROMPT}"; then
       short_prompt
       zle reset-prompt
    fi
-   zle .self-insert
+   zle ".${WIDGET}"
 }
 zle -N self-insert
+zle -N up-line-or-history
+zle -N history-incremental-search-backward

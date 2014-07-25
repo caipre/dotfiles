@@ -4,6 +4,7 @@
 [alias]
    lg = log --pretty=format:'%C(yellow)%h%C(reset)  %s  %C(bold black)[%an]%C(reset)'
    can = commit --amend --no-edit
+   stat = show --stat
 [color]
    ui = always
 [core]
