@@ -11,6 +11,7 @@ alias mkdir='mkdir -p'
 alias q=exit
 alias rs='source ~/.zshrc; reset'
 alias sun='sort | uniq -c | sort -rn'
+alias vi=vim
 
 # git
 alias br='git branch'
