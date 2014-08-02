@@ -27,7 +27,6 @@ set shiftwidth=3
 set showcmd
 set showmatch
 set smartcase
-set smartindent
 set smarttab
 set softtabstop=3
 set splitbelow
