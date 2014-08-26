@@ -1,5 +1,8 @@
-zsh/.zcompdump
-zsh/.histfile
-vim/.viminfo
+vim/.localvimrc_persistent
 vim/.netrwhist
+vim/.viminfo
 vim/ctrlp-cache
+vim/sessions
+vim/spell
+zsh/.histfile*
+zsh/.zcompdump
