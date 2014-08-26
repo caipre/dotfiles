@@ -21,6 +21,7 @@ unsetopt nomatch
 
 # History
 setopt append_history
+#etopt extended_history # This breaks ignore dups
 setopt hist_ignore_all_dups
 setopt hist_ignore_dups
 setopt hist_ignore_space

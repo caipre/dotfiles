@@ -22,7 +22,7 @@ alias st='git status'
 
 # tmux
 alias tmux='\tmux -f ~/.tmux.conf -L main'
-alias ntmux='TMUX_NESTED=1 TMUX= \tmux -f ~/.ntmux.conf -L nested'
+alias ntmux='TMUX_NESTED=1 \tmux -f ~/.ntmux.conf -L nested'
 alias rtmux='TMUX_REMOTE=1 \tmux -f ~/.rtmux.conf -L remote'
 
 # misc

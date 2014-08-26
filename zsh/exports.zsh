@@ -2,7 +2,7 @@
 # Author: Nick Platt
 
 # History control
-export HISTFILE=$HOME/.zsh/.histfile
+export HISTFILE="${HOME}/.zsh/.histfile.${HOSTNAME%%.*}"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
