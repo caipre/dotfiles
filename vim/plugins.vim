@@ -8,15 +8,22 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_extensions = ['funky']
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_max_files = 1000000
-let g:ctrlp_user_command = "find %s -type f" .
-                         \ " -not -path '*/.git/*'"
-                         \ " -not -iname '*.gif'"
-                         \ " -not -iname '*.jpg'"
-                         \ " -not -iname '*.pdf'"
-                         \ " -not -iname '*.png'"
-                         \ " | while read file; do"
-                         \ "     echo $#filename $filename; "
-                         \ "   done | sort -n | awk '{print $2}'"
+let g:ctrlp_user_command = "find %s -type f"            .
+                         \ " -not -iname '*.gif'"       .
+                         \ " -not -iname '*.gitignore'" .
+                         \ " -not -iname '*.jpg'"       .
+                         \ " -not -iname '*.lock'"      .
+                         \ " -not -iname '*.lvimrc'"    .
+                         \ " -not -iname '*.pdf'"       .
+                         \ " -not -iname '*.png'"       .
+                         \ " -not -iname '*.swf'"       .
+                         \ " -not -iname 'tags'"        .
+                         \ " -not -iname '*.xml'"       .
+                         \ " -not -name '*Thumbs.db'"   .
+                         \ " -not -path '*/.git/*'"     .
+                         \ " | while read file; do"     .
+                         \ "     echo $#file $file; "   .
+                         \ "   done | sort -n | cut -d ' ' -f 2-"
 let g:ctrlp_working_path_mode = 'rw'
 
 " ctrlp-funky
