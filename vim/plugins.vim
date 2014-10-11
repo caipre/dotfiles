@@ -37,6 +37,9 @@ let g:delimitMate_expand_cr = 1
 let g:localvimrc_persistent = 2
 let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
 
+" supertab
+let g:SuperTabSetDefaultCompletionType = 'context'
+
 " tagbar
 let g:tagbar_autofocus = 1
 let g:tagbar_iconchars = ['► ', '▼ ']
