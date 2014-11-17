@@ -5,12 +5,14 @@ alias ..='cd ..'
 alias diff='diff -s'
 alias g='grep'
 alias grep='grep -P --color=always'
+alias Less=less
 alias ll='ls -lahF --group-directories-first --time-style long-iso --color'
 alias mkdir='mkdir -p'
 #lias mv='mv --no-clobber'
 alias q=exit
 alias rs='source ~/.zshrc; reset'
 alias sun='sort | uniq -c | sort -rn'
+alias unique='perl -ne '\''BEGIN { %h = (); } unless ($h{$_}) { $h{$_} = 1; print; }'\'
 alias vi=vim
 
 # git
