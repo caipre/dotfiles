@@ -9,6 +9,7 @@ let g:ctrlp_extensions = ['funky']
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_max_files = 1000000
 let g:ctrlp_user_command = "find %s -type f"            .
+                         \ " -not -iname '*.DS_Store'"  .
                          \ " -not -iname '*.gif'"       .
                          \ " -not -iname '*.gitignore'" .
                          \ " -not -iname '*.jpg'"       .
