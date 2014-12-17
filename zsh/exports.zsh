@@ -11,7 +11,7 @@ export EDITOR='vim'
 export LC_COLLATE='C'
 
 # Miscellaneous
-export LESS='-Ri'
+export LESS='-FRi'
 export GREP_COLORS='fn=38;5;238:ms=38;5;29'
 
 # Color less
