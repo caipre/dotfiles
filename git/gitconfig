@@ -9,6 +9,7 @@
    ui = always
 [core]
    excludesfile = ~/.gitignore
+   pager = cat && echo
 [diff]
    statGraphWidth = 20
 [pull]
