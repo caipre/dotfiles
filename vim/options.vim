@@ -6,7 +6,7 @@ set backspace=indent,eol,start
 set cindent
 set cursorline
 set complete=.,w,i,t
-set directory=$HOME/.swp
+"et directory=$HOME/.swp
 set expandtab
 set fileformat=unix
 set formatoptions=tcroqnl
