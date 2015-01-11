@@ -9,9 +9,11 @@ export SAVEHIST=10000
 # Shell parameters
 export EDITOR='vim'
 export LC_COLLATE='C'
+export REPORTTIME=10
+export TIMEFMT=$'\nreal  %E\nuser  %U\nsys   %S'
 
 # Miscellaneous
-export LESS='-FRi'
+export LESS='-Ri'
 export GREP_COLORS='fn=38;5;238:ms=38;5;29'
 
 # Color less
