@@ -10,7 +10,7 @@ export SAVEHIST=10000
 export EDITOR='vim'
 export LC_COLLATE='C'
 export REPORTTIME=10
-export TIMEFMT=$'\nreal  %E\nuser  %U\nsys   %S'
+export TIMEFMT=$'\nreal  %*E\nuser  %*U\nsys   %*S'
 
 # Miscellaneous
 export LESS='-Ri'
