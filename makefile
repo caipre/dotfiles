@@ -1,28 +1,28 @@
 all:: git ranger tmux vim zsh
 
 clean::
-	rm ${HOME}/.gitconfig ${HOME}/.gitignore
-	rm ${HOME}/.config/ranger/rc.conf
-	rm ${HOME}/.tmux.conf ${HOME}/.ntmux.conf ${HOME}/.rtmux.conf
-	rm -r ${HOME}/.vimrc ${HOME}/.vim
-	rm -r ${HOME}/.zshrc ${HOME}/.zsh
+	rm -f ${HOME}/.gitconfig ${HOME}/.gitignore
+	rm -f ${HOME}/.config/ranger/rc.conf
+	rm -f ${HOME}/.tmux.conf ${HOME}/.ntmux.conf ${HOME}/.rtmux.conf
+	rm -rf ${HOME}/.vimrc ${HOME}/.vim
+	rm -rf ${HOME}/.zshrc ${HOME}/.zsh
 
 git::
-	ln -s ${PWD}/git/gitconfig ${HOME}/.gitconfig
-	ln -s ${PWD}/git/gitignore ${HOME}/.gitignore
+	ln -sf ${PWD}/git/gitconfig ${HOME}/.gitconfig
+	ln -sf ${PWD}/git/gitignore ${HOME}/.gitignore
 
 ranger::
-	ln -s ${PWD}/ranger/rc.conf ${HOME}/.config/ranger/rc.conf
+	ln -sf ${PWD}/ranger/rc.conf ${HOME}/.config/ranger/rc.conf
 
 tmux::
-	ln -fs ${PWD}/tmux/tmux.conf ${HOME}/.tmux.conf
-	ln -fs ${PWD}/tmux/ntmux.conf ${HOME}/.ntmux.conf
-	ln -fs ${PWD}/tmux/rtmux.conf ${HOME}/.rtmux.conf
+	ln -sf ${PWD}/tmux/tmux.conf ${HOME}/.tmux.conf
+	ln -sf ${PWD}/tmux/ntmux.conf ${HOME}/.ntmux.conf
+	ln -sf ${PWD}/tmux/rtmux.conf ${HOME}/.rtmux.conf
 
 vim::
-	ln -fs ${PWD}/vim ${HOME}/.vim
-	ln -fs ${PWD}/vim/vimrc ${HOME}/.vimrc
+	ln -sf ${PWD}/vim ${HOME}/.vim
+	ln -sf ${PWD}/vim/vimrc ${HOME}/.vimrc
 
 zsh::
-	ln -fs ${PWD}/zsh ${HOME}/.zsh
-	ln -fs ${PWD}/zsh/zshrc ${HOME}/.zshrc
+	ln -sf ${PWD}/zsh ${HOME}/.zsh
+	ln -sf ${PWD}/zsh/zshrc ${HOME}/.zshrc
