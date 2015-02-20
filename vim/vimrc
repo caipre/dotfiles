@@ -2,7 +2,7 @@
 " Author: Nick Platt
 
 set nocompatible
-let g:pathogen_disabled = [ 'snipmate', 'vdebug', 'youcompleteme' ]
+let g:pathogen_disabled = [ 'fugitive', 'multiple-cursors', 'sneak', 'snipmate', 'vdebug', 'youcompleteme' ]
 execute pathogen#infect()
 
 syntax on
@@ -32,7 +32,7 @@ augroup _
 
    " Exit insert mode on idle
    autocmd CursorHoldI * stopinsert
-   autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=15000
+   autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=30000
    autocmd InsertLeave * let &updatetime=updaterestore
 
    " Remove trailing whitespace on write
