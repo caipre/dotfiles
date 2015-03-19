@@ -39,6 +39,7 @@ set timeoutlen=200
 set viminfo+=n$HOME/.vim/.viminfo
 set virtualedit=onemore
 set wildignore=*/.git*,*/.svn/*
+set wildignorecase
 set wildmenu
 set wildmode=list:longest,full
 
