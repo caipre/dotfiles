@@ -12,6 +12,10 @@ git::
 	ln -sf ${PWD}/git/gitignore ${HOME}/.gitignore
 
 ranger::
+	mkdir -p ${HOME}/.config/ranger/colorschemes
+	touch ${HOME}/.config/ranger/colorschemes/__init__.py
+	ln -sf ${PWD}/ranger/atlas.py ${HOME}/.config/ranger/colorschemes/atlas.py
+	ln -sf ${PWD}/ranger/scope.sh ${HOME}/.config/ranger/scope.sh
 	ln -sf ${PWD}/ranger/rc.conf ${HOME}/.config/ranger/rc.conf
 
 tmux::
