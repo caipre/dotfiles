@@ -2,7 +2,7 @@
    name = Nick Platt
    email = platt.nicholas@gmail.com
 [alias]
-   lg = log --pretty=format:'%C(yellow)%h%C(reset)  %s  %C(bold black)[%an]%C(reset)'
+   lg = log --pretty=tformat:'%C(yellow)%h%C(reset)  %C(bold black)%<(20,trunc)%an%C(reset)  %s'
    can = commit --amend --no-edit
    stat = show --stat
    tags = tag -l
