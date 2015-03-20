@@ -1,11 +1,11 @@
 all:: git ranger tmux vim zsh
 
 clean::
-	rm -f ${HOME}/.gitconfig ${HOME}/.gitignore
-	rm -f ${HOME}/.config/ranger/rc.conf
-	rm -f ${HOME}/.tmux.conf ${HOME}/.ntmux.conf ${HOME}/.rtmux.conf
-	rm -rf ${HOME}/.vimrc ${HOME}/.vim
-	rm -rf ${HOME}/.zshrc ${HOME}/.zsh
+	rm -f ${HOME}/.git{config,ignore}
+	rm -rf ${HOME}/.config/ranger
+	rm -f ${HOME}/.{,n,r}tmux.conf
+	rm -rf ${HOME}/.vim ${HOME}/.vimrc
+	rm -rf ${HOME}/.zsh ${HOME}/.zshrc
 
 git::
 	ln -sf ${PWD}/git/gitconfig ${HOME}/.gitconfig
