@@ -2,7 +2,14 @@
 " Author: Nick Platt
 
 set nocompatible
-let g:pathogen_disabled = [ 'fugitive', 'multiple-cursors', 'sneak', 'snipmate', 'vdebug', 'youcompleteme' ]
+let g:pathogen_disabled = [
+   \ 'fugitive',
+   \ 'multiple-cursors',
+   \ 'sneak',
+   \ 'snipmate',
+   \ 'vdebug',
+   \ 'youcompleteme'
+\]
 execute pathogen#infect()
 
 syntax on
