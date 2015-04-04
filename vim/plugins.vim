@@ -34,6 +34,12 @@ let g:ctrlp_funky_syntax_highlight = 1
 " delimitmate
 let g:delimitMate_expand_cr = 1
 
+" goyo
+let g:goyo_width = 120
+let g:goyo_margin_top = 0
+let g:goyo_margin_bottom = 0
+let g:goyo_linenr = 1
+
 " localvimrc
 let g:localvimrc_persistent = 2
 let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
