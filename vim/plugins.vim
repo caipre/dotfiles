@@ -44,6 +44,9 @@ let g:goyo_linenr = 1
 let g:localvimrc_persistent = 2
 let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
 
+" snipmate
+let g:snips_author = 'Nick Platt'
+
 " supertab
 let g:SuperTabSetDefaultCompletionType = 'context'
 
