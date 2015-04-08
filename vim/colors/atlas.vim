@@ -21,13 +21,13 @@ let g:colors_name = 'atlas'
 "ighlight CursorIM                   ctermfg=000     ctermbg=000      cterm=none
 highlight CursorLine                 ctermfg=none    ctermbg=233      cterm=none
 highlight CursorLineNr               ctermfg=238     ctermbg=none     cterm=none
-highlight DiffAdd                    ctermfg=none    ctermbg=029      cterm=none
-highlight DiffChange                 ctermfg=none    ctermbg=238      cterm=none
-highlight DiffDelete                 ctermfg=none    ctermbg=009      cterm=none
-"ighlight DiffText                   ctermfg=000     ctermbg=000      cterm=none
+highlight DiffAdd                    ctermfg=029     ctermbg=233      cterm=none
+highlight DiffChange                 ctermfg=none    ctermbg=none     cterm=none
+highlight DiffDelete                 ctermfg=052     ctermbg=none     cterm=none
+highlight DiffText                   ctermfg=180     ctermbg=none     cterm=none
 highlight Directory                  ctermfg=031     ctermbg=none     cterm=none
 highlight ErrorMsg                   ctermfg=009     ctermbg=none     cterm=none
-"ighlight FoldColumn                 ctermfg=000     ctermbg=000      cterm=none
+highlight FoldColumn                 ctermfg=235     ctermbg=none     cterm=none
 highlight Folded                     ctermfg=238     ctermbg=234      cterm=none
 highlight IncSearch                  ctermfg=235     ctermbg=221      cterm=none
 highlight LineNr                     ctermfg=235     ctermbg=none     cterm=none
@@ -42,7 +42,7 @@ highlight PmenuSel                   ctermfg=253     ctermbg=024      cterm=none
 "ighlight PmenuThumb                 ctermfg=000     ctermbg=000      cterm=none
 highlight Question                   ctermfg=253     ctermbg=none     cterm=none
 highlight Search                     ctermfg=none    ctermbg=235      cterm=none
-"ighlight SignColumn                 ctermfg=000     ctermbg=000      cterm=none
+highlight SignColumn                 ctermfg=235     ctermbg=none     cterm=none
 highlight SpecialKey                 ctermfg=235     ctermbg=none     cterm=none
 highlight SpellBad                   ctermfg=203     ctermbg=none     cterm=undercurl
 "ighlight SpellCap                   ctermfg=000     ctermbg=000      cterm=none
@@ -93,7 +93,7 @@ highlight Statement                  ctermfg=029     ctermbg=none     cterm=none
 highlight String                     ctermfg=059     ctermbg=none     cterm=none
 "ighlight Structure                  ctermfg=none    ctermbg=none     cterm=none
 "ighlight Tag                        ctermfg=none    ctermbg=none     cterm=none
-highlight Todo                       ctermfg=244     ctermbg=none     cterm=none
+highlight Todo                       ctermfg=068     ctermbg=none     cterm=none
 highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 "ighlight Typedef                    ctermfg=none    ctermbg=none     cterm=none
 "ighlight Underlined                 ctermfg=none    ctermbg=none     cterm=none

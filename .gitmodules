@@ -73,3 +73,6 @@
 [submodule "vim/bundle/snippets"]
 	path = vim/bundle/snippets
 	url = git@github.com:honza/vim-snippets.git
+[submodule "vim/bundle/diff"]
+	path = vim/bundle/diff
+	url = git@github.com:chrisbra/vim-diff-enhanced.git

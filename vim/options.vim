@@ -7,8 +7,10 @@ set cindent
 set cursorline
 set complete=.,w,i,t
 "et directory=$HOME/.swp
+set diffopt=filler,iwhite
 set expandtab
 set fileformat=unix
+set foldcolumn=0
 set formatoptions=tcroqnl
 set history=100
 set hlsearch
