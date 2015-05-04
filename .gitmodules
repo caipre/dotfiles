@@ -76,3 +76,6 @@
 [submodule "vim/bundle/diff"]
 	path = vim/bundle/diff
 	url = git@github.com:chrisbra/vim-diff-enhanced.git
+[submodule "vim/bundle/fswitch"]
+	path = vim/bundle/fswitch
+	url = git@github.com:derekwyatt/vim-fswitch.git
