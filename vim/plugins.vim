@@ -62,3 +62,17 @@ let g:tagbar_iconchars = ['► ', '▼ ']
 let g:tagbar_left = 1
 let g:tagbar_show_visibility = 0
 let g:tagbar_sort = 1
+
+let g:tagbar_type_rust = {
+   \ 'ctagstype' : 'rust',
+   \ 'kinds' : [
+       \'T:types,type definitions',
+       \'f:functions,function definitions',
+       \'g:enum,enumeration names',
+       \'s:structure names',
+       \'m:modules,module names',
+       \'c:consts,static constants',
+       \'t:traits,traits',
+       \'i:impls,trait implementations',
+   \]
+\}
