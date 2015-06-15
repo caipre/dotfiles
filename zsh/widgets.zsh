@@ -36,6 +36,7 @@ function tmux_escape () {
 }
 
 function zle-line-init zle-line-finish {
+   set_cursor_style vertical-bar
    long_prompt
 }
 zle -N zle-line-init
@@ -44,7 +45,7 @@ zle -N zle-line-finish
 function zle-keymap-select {
    if [[ "${KEYMAP}" =~ "(main|viins)" ]]; then
       set_cursor_style vertical-bar
-   elif [[ "${KEYMAP}" = "vicmd" ]]; then
+   elif [[ "${KEYMAP}" == "vicmd" ]]; then
       set_cursor_style block
    fi
    short_prompt
