@@ -76,3 +76,6 @@ let g:tagbar_type_rust = {
        \'i:impls,trait implementations',
    \]
 \}
+
+" togglecursor
+let g:togglecursor_leave = 'line'
