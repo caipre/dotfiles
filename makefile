@@ -1,7 +1,8 @@
-all:: git ranger tmux vim zsh
+all:: git mutt ranger tmux vim zsh
 
 clean::
 	rm -f ${HOME}/.git{config,ignore}
+	rm -f ${HOME}/.muttrc
 	rm -rf ${HOME}/.config/ranger
 	rm -f ${HOME}/.{,n,r}tmux.conf
 	rm -rf ${HOME}/.vim ${HOME}/.vimrc
@@ -10,6 +11,9 @@ clean::
 git::
 	ln -sf ${PWD}/git/gitconfig ${HOME}/.gitconfig
 	ln -sf ${PWD}/git/gitignore ${HOME}/.gitignore
+
+mutt::
+	ln -sf ${PWD}/mutt/muttrc ${HOME}/.muttrc
 
 ranger::
 	mkdir -p ${HOME}/.config/ranger/colorschemes
