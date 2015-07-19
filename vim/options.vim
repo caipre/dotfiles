@@ -3,9 +3,9 @@
 
 set autoindent
 set backspace=indent,eol,start
-set cindent
 set cursorline
 set complete=.,w,i,t
+set completeopt=menu,longest,preview
 "et directory=$HOME/.swp
 set diffopt=filler,iwhite
 set expandtab
