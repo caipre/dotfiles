@@ -102,10 +102,11 @@ highlight Type                       ctermfg=244     ctermbg=none     cterm=none
 """ Syntax Specific
 " c
 "ighlight cConditional               ctermfg=035     ctermbg=none     cterm=none
+highlight cConstant                  ctermfg=110     ctermbg=none     cterm=none
 "ighlight cRepeat                    ctermfg=035     ctermbg=none     cterm=none
 "ighlight cStatement                 ctermfg=035     ctermbg=none     cterm=none
-"ighlight cStructure                 ctermfg=075     ctermbg=none     cterm=none
-"ighlight cType                      ctermfg=075     ctermbg=none     cterm=none
+highlight cStructure                 ctermfg=240     ctermbg=none     cterm=none
+highlight cType                      ctermfg=240     ctermbg=none     cterm=none
 
 " css
 highlight cssBoxProp                 ctermfg=073     ctermbg=none     cterm=none
