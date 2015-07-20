@@ -27,4 +27,3 @@ nnoremap <CR>          o<ESC>
 nnoremap <SPACE>       i<SPACE><ESC>l
 nnoremap <TAB>         i<TAB><ESC>l
 nnoremap Y             y$
-nnoremap e             <C-e>
