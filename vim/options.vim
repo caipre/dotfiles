@@ -10,6 +10,7 @@ set completeopt=menu,longest,preview
 set diffopt=filler,iwhite
 set expandtab
 set fileformat=unix
+set fillchars=vert:│
 set foldcolumn=0
 set formatoptions=tcroqnl
 set history=100
