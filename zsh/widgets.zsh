@@ -35,8 +35,17 @@ function tmux_escape () {
    print -n "${csi}";
 }
 
+function set_man_width () {
+   if [[ "${COLUMNS}" -gt 100 ]]; then
+      export MANWIDTH=100
+   else
+      export MANWIDTH=
+   fi
+}
+
 function zle-line-init zle-line-finish {
    set_cursor_style vertical-bar
+   set_man_width
    long_prompt
 }
 zle -N zle-line-init
