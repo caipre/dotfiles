@@ -4,8 +4,12 @@
 set nocompatible
 let g:pathogen_disabled = [
    \ 'fugitive',
+   \ 'go',
    \ 'multiple-cursors',
    \ 'sneak',
+   \ 'snipmate',
+   \ 'snippets',
+   \ 'tagbar-phpctags',
    \ 'vdebug',
    \ 'youcompleteme'
 \]
