@@ -24,7 +24,6 @@ let g:ctrlp_user_command = "find %s"                       .
                          \ "    -not -iname '*.pdf'"       .
                          \ "    -not -iname '*.png'"       .
                          \ "    -not -iname '*.swf'"       .
-                         \ "    -not -iname '*.xml'"       .
                          \ "    -not -iname '*thumbs.db'"  .
                          \ "    -not -iname 'tags'"        .
                          \ " \\) -print"                   .
