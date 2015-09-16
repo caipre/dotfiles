@@ -2,7 +2,13 @@
 # Author: Nick Platt
 
 function set_cursor_style () {
-   if [[ -n "${PUTTY}" ]]; then
+   if [[ -n "${TTY}" || $(tty) == /dev/tty* ]]; then
+      TTY=true
+      case "$1" in
+         "vertical-bar") local csi='' ;;
+         "block")        local csi='' ;;
+      esac
+   elif [[ -n "${PUTTY}" ]]; then
       case "$1" in
          "vertical-bar") local csi='\033[=1c' ;;
          "block")        local csi='\033[=2c' ;;
