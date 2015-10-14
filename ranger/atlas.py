@@ -2,18 +2,18 @@
 # License: MIT <http://opensource.org/licenses/MIT>
 
 from ranger.gui.color import *
-from ranger.colorschemes.default import Default
+from ranger.colorschemes.solarized import Solarized
 
-class Atlas(Default):
+class Atlas(Solarized):
     def use(self, context):
-        fg, bg, attr = Default.use(self, context)
+        fg, bg, attr = Solarized.use(self, context)
 
         progress_bar_color = white
 
         if context.in_browser:
             if context.selected:
-                fg = blue
-                bg = white
+                fg = 234
+                bg = 253
                 attr = reverse | bold
 
         if context.in_titlebar:
