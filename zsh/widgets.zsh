@@ -2,8 +2,7 @@
 # Author: Nick Platt
 
 function set_cursor_style () {
-   if [[ -n "${TTY}" || $(tty) == /dev/tty* ]]; then
-      TTY=true
+   if [[ $(tput colors) -eq 8 ]]; then
       case "$1" in
          "vertical-bar") local csi='' ;;
          "block")        local csi='' ;;
