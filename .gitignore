@@ -1,3 +1,5 @@
+profiles/
+
 vim/.localvimrc_persistent
 vim/.netrwhist
 vim/.viminfo
