@@ -1,4 +1,5 @@
-profiles/
+profiles/*
+!profiles/.gitkeep
 
 vim/.localvimrc_persistent
 vim/.netrwhist
