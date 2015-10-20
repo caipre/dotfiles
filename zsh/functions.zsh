@@ -19,6 +19,10 @@ function mkmv () {
    fi
 }
 
+function h () {
+   perl -pe "s/$1/\\033[1;34m$&\\033[0m/g"
+}
+
 function clrs () {
    colors=$(tput colors)
 
