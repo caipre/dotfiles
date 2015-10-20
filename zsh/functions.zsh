@@ -20,7 +20,17 @@ function mkmv () {
 }
 
 function h () {
-   perl -pe "s/$1/\\033[1;34m$&\\033[0m/g"
+   local color="${2-blue}"
+   case "${color}" in
+      'red') color=31 ;;
+      'green') color=32 ;;
+      'yellow') color=33 ;;
+      'blue') color=34 ;;
+      'magenta') color=35 ;;
+      'cyan') color=36 ;;
+      'white') color=37 ;;
+   esac
+   perl -pe "s/$1/\\033[1;${color}m$&\\033[0m/g"
 }
 
 function clrs () {
