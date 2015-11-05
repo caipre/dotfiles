@@ -1,7 +1,8 @@
-all:: git mutt ranger tmux vim zsh
+all:: git inputrc mutt ranger tmux vim zsh
 
 clean::
 	rm -f ${HOME}/.git{config,ignore}
+	rm -f ${HOME}/.inputrc
 	rm -f ${HOME}/.muttrc
 	rm -rf ${HOME}/.config/ranger
 	rm -f ${HOME}/.{,n,r}tmux.conf
@@ -11,6 +12,9 @@ clean::
 git::
 	ln -sf ${PWD}/git/gitconfig ${HOME}/.gitconfig
 	ln -sf ${PWD}/git/gitignore ${HOME}/.gitignore
+
+inputrc::
+	ln -sf ${PWD}/bash/inputrc ${HOME}/.inputrc
 
 mutt::
 	ln -sf ${PWD}/mutt/muttrc ${HOME}/.muttrc

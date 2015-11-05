@@ -1,11 +1,21 @@
 # inputrc
 # Author: Nick Platt
 
-set bell-style visible
-set completion-ignore-case on
-set input-meta on
-set expand-tilde on
-set mark-directories on
-set output-meta on
-set show-all-if-ambiguous on
-set visible-stats on
+set bell-style none
+set completion-ignore-case
+set editing-mode vi
+set expand-tilde
+set history-size 1000
+set input-meta
+set mark-directories
+set mark-symlinked-directories
+set match-hidden-files
+set output-meta
+set show-all-if-ambiguous
+set visible-stats
+
+set keymap vi-command
+Control-l: clear-screen
+
+set keymap vi-insert
+Control-l: clear-screen
