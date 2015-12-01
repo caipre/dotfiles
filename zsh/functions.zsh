@@ -33,6 +33,10 @@ function h () {
    perl -pe "s/$1/\\033[1;${color}m$&\\033[0m/g"
 }
 
+function fields () {
+   awk '{for (i = 1; i <= NF; i++) { printf("%2d: %s\n", i, $i) }}'
+}
+
 function clrs () {
    colors=$(tput colors)
 
