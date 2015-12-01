@@ -3,7 +3,6 @@
 
 set nocompatible
 let g:pathogen_disabled = [
-   \ 'fugitive',
    \ 'go',
    \ 'multiple-cursors',
    \ 'sneak',
@@ -46,5 +45,5 @@ augroup _
    autocmd InsertLeave * let &updatetime=updaterestore
 
    " Remove trailing whitespace on write
-   autocmd BufWritePre * :call TrimTrailingWhitespace()
+   "autocmd BufWritePre * :call TrimTrailingWhitespace()
 augroup END
