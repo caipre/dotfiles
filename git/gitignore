@@ -1,7 +1,41 @@
-*.swp
-.DS_Store
+# vim
 .lvimrc
-.realsync
-.pyc
-.pyo
+[._]*.s[a-w][a-z]
+[._].s[a-w][a-z]
+*~
+
+# python
+__pycache__/
+*.py[cod]
+
+# c / c++
+*.o
+*.ko
+*.elf
+
+*.lib
+*.a
+*.la
+*.lo
+
+*.dll
+*.so
+*.so.*
+*.dylib
+*.rlib
+
+*.exe
+*.out
+*.app
+
+# development
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+cmake_install.cmake
+install_manifest.txt
+
 tags
+
+# misc
+.DS_Store
