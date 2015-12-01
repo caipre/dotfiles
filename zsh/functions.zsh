@@ -43,7 +43,7 @@ function clrs () {
    for r in {0..1}; do
       for c in {0..7}; do
          local code=$(( 30+$c ))
-         printf "\033[$r;${code}m%02s\033[39m " "x"
+         printf "\033[$r;${code}m%02s\033[39m " "${code}"
       done
       print
    done
