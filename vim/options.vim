@@ -20,7 +20,7 @@ set incsearch
 set laststatus=2
 set lazyredraw
 set linebreak
-set list
+set nolist
 set listchars=tab:·-,trail:_,eol:¬,extends:»,precedes:«
 set matchtime=2
 set number
