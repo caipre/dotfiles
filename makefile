@@ -1,6 +1,7 @@
-all:: git inputrc mutt ranger tmux vim zsh
+all:: gdb git inputrc mutt ranger tmux vim zsh
 
 clean::
+	rm -f ${HOME}/.gdbinit
 	rm -f ${HOME}/.git{config,ignore}
 	rm -f ${HOME}/.inputrc
 	rm -f ${HOME}/.muttrc
@@ -8,6 +9,9 @@ clean::
 	rm -f ${HOME}/.{,n,r}tmux.conf
 	rm -rf ${HOME}/.vim ${HOME}/.vimrc
 	rm -rf ${HOME}/.zsh ${HOME}/.zshrc
+
+gdb::
+	ln -sf ${PWD}/gdb/gdbinit ${HOME}/.gdbinit
 
 git::
 	ln -sf ${PWD}/git/gitconfig ${HOME}/.gitconfig
