@@ -14,16 +14,26 @@ source $HOME/.zsh/widgets.zsh
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 
 # SSH Agent
-function agent_active? () {
-   source "${HOME}/.ssh/agent.${HOST}" >/dev/null 2>&1
-   ssh-add -l >/dev/null 2>&1
+function agent_active () {
+   source "${HOME}/.ssh/agent.${HOST}" &>/dev/null
+   ssh-add -l &>/dev/null
+}
+
+function agent_status () {
+   if agent_active; then
+      echo "active"
+   elif pidof ssh-agent &>/dev/null; then
+      echo "active, no connection"
+   else
+      echo "inactive"
+   fi
 }
 
 function agent_start () {
-   if agent_active?; then return; fi
+   if agent_active; then return; fi
    (umask 0077; ssh-agent >"${HOME}/.ssh/agent.${HOST}")
-   source "${HOME}/.ssh/agent.${HOST}" >/dev/null 2>&1
-   ssh-add "${HOME}"/.ssh/*-rsa >/dev/null 2>&1
-   ssh-add "${HOME}"/.ssh/*-ed25519 >/dev/null 2>&1
+   source "${HOME}/.ssh/agent.${HOST}" &>/dev/null
+   ssh-add "${HOME}"/.ssh/*-rsa &>/dev/null
+   ssh-add "${HOME}"/.ssh/*-ed25519 &>/dev/null
 }
-agent_active?
+agent_active
