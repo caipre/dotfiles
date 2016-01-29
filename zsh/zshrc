@@ -29,7 +29,7 @@ function agent_status () {
    fi
 }
 
-function agent_start () {
+function start_agent () {
    if agent_active; then return; fi
    (umask 0077; ssh-agent >"${HOME}/.ssh/agent.${HOST}")
    source "${HOME}/.ssh/agent.${HOST}" &>/dev/null
