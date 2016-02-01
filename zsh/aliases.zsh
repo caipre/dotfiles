@@ -19,7 +19,7 @@ alias vi=vim
 alias br='git branch'
 alias co='git checkout'
 alias di='git diff --color'
-alias lg='git lg | head'
+alias lg='git lg -n10 --first-parent --no-merges'
 alias st='git status'
 
 # tmux
