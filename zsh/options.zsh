@@ -3,6 +3,8 @@
 
 # Directories
 setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
 
 # Completion
 setopt always_to_end
@@ -10,7 +12,6 @@ setopt auto_list
 setopt auto_menu
 setopt auto_param_keys
 setopt auto_param_slash
-setopt auto_pushd
 setopt auto_remove_slash
 #etopt complete_in_word
 setopt list_types
