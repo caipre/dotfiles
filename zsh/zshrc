@@ -33,7 +33,7 @@ function start_agent () {
    if agent_active; then return; fi
    (umask 0077; ssh-agent >"${HOME}/.ssh/agent.${HOST}")
    source "${HOME}/.ssh/agent.${HOST}" &>/dev/null
-   ssh-add "${HOME}"/.ssh/*-rsa &>/dev/null
-   ssh-add "${HOME}"/.ssh/*-ed25519 &>/dev/null
+   ssh-add "${HOME}"/.ssh/*.rsa &>/dev/null
+   ssh-add "${HOME}"/.ssh/*.ed25519 &>/dev/null
 }
 agent_active
