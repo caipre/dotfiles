@@ -36,6 +36,7 @@ cmake_install.cmake
 install_manifest.txt
 
 tags
+.ctags
 
 # misc
 .DS_Store
