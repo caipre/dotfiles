@@ -35,13 +35,15 @@ set softtabstop=3
 set splitbelow
 set splitright
 set statusline=File\ %F\ %r\ %{GetSyntaxName()}%=[%c\ \|\ %l/%L\ (%p%%)]
+set suffixes-=\.h
+set noswapfile
 set tabstop=3
 set tags=tags;~/
 set textwidth=80
 set timeoutlen=200
 set viminfo+=n$HOME/.vim/.viminfo
 set virtualedit=onemore
-set wildignore=*/.git*,*/.svn/*
+set wildignore=*/.git*,*/.svn/*,*.sw*
 set wildignorecase
 set wildmenu
 set wildmode=list:longest,full

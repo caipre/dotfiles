@@ -5,7 +5,7 @@
 let g:ctrlp_by_filename = 1
 let g:ctrlp_cache_dir = $HOME.'/.vim/ctrlp-cache'
 let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_extensions = ['funky']
+let g:ctrlp_extensions = ['funky', 'tag', 'dir']
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_max_files = 1000000
 let g:ctrlp_switch_buffer = 'v'

@@ -47,3 +47,7 @@ augroup _
    " Remove trailing whitespace on write
    "autocmd BufWritePre * :call TrimTrailingWhitespace()
 augroup END
+
+let g:mru_tab = 1
+nmap <leader>tl :exe "tabn ".g:mru_tab<CR>
+autocmd TabLeave * let g:mru_tab = tabpagenr()

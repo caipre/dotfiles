@@ -7,6 +7,7 @@ nnoremap          <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
 nnoremap <silent> <leader>, :silent! /arst$<CR>
 nnoremap <silent> <leader>. :set spell!<CR>
 nnoremap <silent> <leader>a :FSSplitLeft<CR>
+nnoremap <silent> <leader>cd :cd %:p:h<cr>:pwd<cr>
 nnoremap <silent> <leader>g :Goyo<CR>
 nnoremap <silent> <leader>h :set hlsearch!<CR>
 nnoremap <silent> <leader>p :set paste!<CR>
@@ -24,6 +25,7 @@ nnoremap <C-J>         <C-W>j
 nnoremap <C-K>         <C-W>k
 nnoremap <C-L>         <C-W>l
 nnoremap <C-N>         :tabnew<CR>
+nnoremap <C-N>         :tabedit <C-R>=expand("%:p:h")<CR>/<CR>
 nnoremap <CR>          o<ESC>
 nnoremap <SPACE>       i<SPACE><ESC>l
 nnoremap <TAB>         i<TAB><ESC>l
