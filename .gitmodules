@@ -79,3 +79,6 @@
 [submodule "vim/bundle/fswitch"]
 	path = vim/bundle/fswitch
 	url = git@github.com:derekwyatt/vim-fswitch.git
+[submodule "vim/bundle/tabline"]
+	path = vim/bundle/tabline
+	url = git@github.com:zyphrus/tabline.vim
