@@ -64,6 +64,12 @@ let g:snips_author = 'Nick Platt'
 " supertab
 let g:SuperTabSetDefaultCompletionType = 'context'
 
+" tabline
+let g:tabline_bracket_left  = ''
+let g:tabline_bracket_right = ''
+let g:tabline_modified = '+'
+let g:tabline_fnamemod = ':p:~:.'
+
 " tagbar
 let g:tagbar_autofocus = 1
 let g:tagbar_iconchars = ['► ', '▼ ']
