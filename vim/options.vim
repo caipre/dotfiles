@@ -13,6 +13,7 @@ set fileformat=unix
 set fillchars=vert:│
 set foldcolumn=0
 set formatoptions=tcroqnl
+set hidden
 set history=100
 set hlsearch
 set ignorecase
@@ -20,9 +21,10 @@ set incsearch
 set laststatus=2
 set lazyredraw
 set linebreak
-set nolist
 set listchars=tab:·-,trail:_,eol:¬,extends:»,precedes:«
 set matchtime=2
+set nolist
+set noswapfile
 set number
 set scrolloff=5
 set shiftround
@@ -34,9 +36,8 @@ set smarttab
 set softtabstop=3
 set splitbelow
 set splitright
-set statusline=File\ %F\ %r\ %{GetSyntaxName()}%=[%c\ \|\ %l/%L\ (%p%%)]
+set statusline=File\ %F\ %m%r%=[%c\ \|\ %l/%L\ (%p%%)]
 set suffixes-=\.h
-set noswapfile
 set tabstop=3
 set tags=tags;~/
 set textwidth=80
