@@ -81,7 +81,7 @@
 	url = git@github.com:derekwyatt/vim-fswitch.git
 [submodule "vim/bundle/tabline"]
 	path = vim/bundle/tabline
-	url = git@github.com:zyphrus/tabline.vim
+	url = git@github.com:zyphrus/tabline.vim.git
 [submodule "vim/bundle/obsession"]
 	path = vim/bundle/obsession
 	url = git@github.com:tpope/vim-obsession.git
