@@ -38,6 +38,7 @@ set splitbelow
 set splitright
 set statusline=File\ %F\ %m%r%=[%c\ \|\ %l/%L\ (%p%%)]
 set suffixes-=\.h
+set switchbuf=usetab
 set tabstop=3
 set tags=tags;~/
 set textwidth=80

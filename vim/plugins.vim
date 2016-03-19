@@ -8,7 +8,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_extensions = ['funky', 'tag', 'dir']
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_max_files = 1000000
-let g:ctrlp_switch_buffer = 'v'
+let g:ctrlp_switch_buffer = 'T'
 let g:ctrlp_user_command = {
    \ 'types': {
    \    1: ['.git', 'cd %s && git ls-files'],
