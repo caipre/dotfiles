@@ -22,5 +22,5 @@ export LESS_TERMCAP_md=$'\e[38;5;250m'          # bold
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[38;5;238;48;5;221m' # standout mode
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[04;38;5;240m'       # underline
+export LESS_TERMCAP_us=$'\e[03;38;5;242m'       # italic
 export LESS_TERMCAP_ue=$'\e[0m'
