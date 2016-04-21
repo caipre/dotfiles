@@ -32,8 +32,8 @@ ranger::
 	ln -sf ${PWD}/ranger/rc.conf ${HOME}/.config/ranger/rc.conf
 
 terminfo::
-	tic ${PWD}/xterm-256color.terminfo
-	tic -x ${PWD}/tmux-256color.terminfo
+	tic ${PWD}/terminfo/xterm-256color.terminfo
+	tic -x ${PWD}/terminfo/tmux-256color.terminfo
 
 tmux::
 	ln -sf ${PWD}/tmux/tmux.conf ${HOME}/.tmux.conf
