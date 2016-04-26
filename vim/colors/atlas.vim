@@ -28,7 +28,7 @@ highlight DiffText                   ctermfg=180     ctermbg=none     cterm=none
 highlight Directory                  ctermfg=031     ctermbg=none     cterm=none
 highlight ErrorMsg                   ctermfg=009     ctermbg=none     cterm=none
 highlight FoldColumn                 ctermfg=235     ctermbg=none     cterm=none
-highlight Folded                     ctermfg=238     ctermbg=234      cterm=none
+highlight Folded                     ctermfg=238     ctermbg=233      cterm=none
 highlight IncSearch                  ctermfg=235     ctermbg=221      cterm=none
 highlight LineNr                     ctermfg=235     ctermbg=none     cterm=none
 highlight MatchParen                 ctermfg=253     ctermbg=067      cterm=none
@@ -49,6 +49,7 @@ highlight SpellBad                   ctermfg=203     ctermbg=none     cterm=unde
 "ighlight SpellLocal                 ctermfg=000     ctermbg=000      cterm=none
 "ighlight SpellRare                  ctermfg=000     ctermbg=000      cterm=none
 highlight StatusLine                 ctermfg=253     ctermbg=none     cterm=none
+"ighlight StatusLine                 ctermfg=023     ctermbg=none     cterm=none
 highlight StatusLineNC               ctermfg=235     ctermbg=none     cterm=none
 highlight TabLine                    ctermfg=244     ctermbg=none     cterm=none
 highlight TabLineFill                ctermfg=none    ctermbg=none     cterm=none

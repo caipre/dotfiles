@@ -39,7 +39,7 @@ let g:ctrlp_user_command = {
    \    "   done | sort -n | cut -d ' ' -f 2-"
    \ }
 
-let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_working_path_mode = 'ra'
 
 " ctrlp-funky
 let g:ctrlp_funky_sort_by_mru = 1
@@ -49,7 +49,7 @@ let g:ctrlp_funky_syntax_highlight = 1
 let g:delimitMate_expand_cr = 1
 
 " goyo
-let g:goyo_width = 168
+let g:goyo_width = 200
 let g:goyo_margin_top = 0
 let g:goyo_margin_bottom = 0
 let g:goyo_linenr = 1

@@ -36,11 +36,11 @@ set smarttab
 set softtabstop=3
 set splitbelow
 set splitright
-set statusline=File\ %F\ %m%r%=[%c\ \|\ %l/%L\ (%p%%)]
+set statusline=File\ %F\ %m%r\ %=\ [%c\ \|\ %l/%L\ (%p%%)]
 set suffixes-=\.h
 set switchbuf=usetab
 set tabstop=3
-set tags=tags;~/
+set tags=./tags;~/
 set textwidth=80
 set timeoutlen=200
 set viminfo+=n$HOME/.vim/.viminfo
