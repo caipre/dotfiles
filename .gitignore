@@ -4,8 +4,11 @@ profiles/*
 vim/.localvimrc_persistent
 vim/.netrwhist
 vim/.viminfo
+vim/bundle
 vim/ctrlp-cache
 vim/sessions
 vim/spell
+vim/view
+
 zsh/.histfile*
 zsh/.zcompdump

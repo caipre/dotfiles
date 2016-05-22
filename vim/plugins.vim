@@ -39,7 +39,7 @@ let g:ctrlp_user_command = {
    \    "   done | sort -n | cut -d ' ' -f 2-"
    \ }
 
-let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_working_path_mode = 'raw'
 
 " ctrlp-funky
 let g:ctrlp_funky_sort_by_mru = 1
@@ -54,15 +54,13 @@ let g:goyo_margin_top = 0
 let g:goyo_margin_bottom = 0
 let g:goyo_linenr = 1
 
+" supertab
+let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:SuperTabCrMapping = 0
+
 " localvimrc
 let g:localvimrc_persistent = 2
 let g:localvimrc_persistence_file = $HOME.'/.vim/.localvimrc_persistent'
-
-" snipmate
-let g:snips_author = 'Nick Platt'
-
-" supertab
-let g:SuperTabSetDefaultCompletionType = 'context'
 
 " tabline
 let g:tabline_bracket_left  = ''
@@ -93,3 +91,13 @@ let g:tagbar_type_rust = {
 
 " togglecursor
 let g:togglecursor_leave = 'line'
+
+" ultisnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+" youcompleteme
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']

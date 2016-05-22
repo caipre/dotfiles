@@ -3,10 +3,9 @@
 
 set autoindent
 set backspace=indent,eol,start
-set cursorline
 set complete=.,w,b,i,t
 set completeopt=menu,preview
-"et directory=$HOME/.swp
+set cursorline
 set diffopt=filler,iwhite
 set expandtab
 set fileformat=unix
@@ -29,6 +28,7 @@ set number
 set scrolloff=5
 set shiftround
 set shiftwidth=3
+set shortmess+=I
 set showcmd
 set showmatch
 set smartcase
@@ -45,7 +45,7 @@ set textwidth=80
 set timeoutlen=200
 set viminfo+=n$HOME/.vim/.viminfo
 set virtualedit=onemore
-set wildignore=*/.git*,*/.svn/*,*.sw*
+set wildignore=*/.git*,*.sw*,*.pyc,*.tar*
 set wildignorecase
 set wildmenu
 set wildmode=list:longest,full

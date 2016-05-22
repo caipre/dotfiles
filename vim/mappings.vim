@@ -24,11 +24,13 @@ nnoremap <C-H>         <C-W>h
 nnoremap <C-J>         <C-W>j
 nnoremap <C-K>         <C-W>k
 nnoremap <C-L>         <C-W>l
-nnoremap <C-N>         :tabnew<CR>
-"nnoremap <C-T>         :tabedit <C-R>=expand("%:p:h")<CR>/<CR>
+noremap <C-N>         :tabnew<CR>
+" nnoremap <C-T>         :tabedit <C-R>=expand("%:p:h")<CR>/<CR>
 nnoremap <CR>          o<ESC>
 nnoremap <SPACE>       i<SPACE><ESC>l
 nnoremap <TAB>         i<TAB><ESC>l
 nnoremap Y             y$
 nnoremap j             gj
 nnoremap k             gk
+
+map Q <nop>
