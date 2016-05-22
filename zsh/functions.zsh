@@ -40,10 +40,12 @@ function fields () {
 function clrs () {
    colors=$(tput colors)
 
+   local i=0
    for r in {0..1}; do
       for c in {0..7}; do
          local code=$(( 30+$c ))
-         printf "\033[$r;${code}m%02s\033[39m " "${code}"
+         printf "\033[$r;${code}m%02d\033[39m " $i
+         ((i+=1))
       done
       print
    done
@@ -55,14 +57,14 @@ function clrs () {
    for r in {0..5}; do
       for c in {0..35}; do
          local code=$(( 16+($r*36)+$c ))
-         printf "\033[38;5;${code}m%02d\033[39m " $(( $code % 100 ))
+         printf "\033[38;5;${code}m%03d\033[39m " $code
       done
       print
    done
 
    for c in {0..23}; do
       local code=$(( 232+$c ))
-      printf "\033[38;5;${code}m%02d\033[39m " $(( $code % 100 ))
+      printf "\033[38;5;${code}m%03d\033[39m " $code
    done
 
    print;
