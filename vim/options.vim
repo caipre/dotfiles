@@ -45,7 +45,7 @@ set textwidth=80
 set timeoutlen=200
 set viminfo+=n$HOME/.vim/.viminfo
 set virtualedit=onemore
-set wildignore=*/.git*,*.sw*,*.pyc,*.tar*
+set wildignore=*/.git*,*.sw[pon],*.pyc,*.tar*
 set wildignorecase
 set wildmenu
 set wildmode=list:longest,full
