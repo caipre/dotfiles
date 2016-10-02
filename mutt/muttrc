@@ -7,9 +7,10 @@ source "gpg -dq $HOME/.mutt/pw.gpg |"
 set folder = imaps://platt.nicholas@imap.gmail.com/
 set imap_check_subscribed
 set imap_keepalive = 300
-set imap_user = platt.nichoas@gmail.com
 set imap_pass = $my_pw_gmail
+set imap_user = platt.nichoas@gmail.com
 set postponed = +[Gmail]/Drafts
+set smtp_authenticators = 'gssapi:login'
 set smtp_url = smtps://platt.nicholas@gmail.com@smtp.gmail.com
 set spoolfile = +INBOX
 unset imap_passive
