@@ -69,6 +69,9 @@ augroup _
 
    " Remove trailing whitespace on write
    autocmd BufWritePre * :call TrimTrailingWhitespace()
+
+   " Disable paste mode on exit insert mode
+   autocmd InsertLeave * :set nopaste
 augroup END
 
 let g:mru_tab = 1
