@@ -54,6 +54,15 @@ let g:goyo_margin_top = 0
 let g:goyo_margin_bottom = 0
 let g:goyo_linenr = 1
 
+" jekyll
+let g:jekyll_post_template = [
+   \ '---',
+   \ 'title: "JEKYLL_TITLE"',
+   \ 'date: "JEKYLL_DATE"',
+   \ '---',
+   \ ''
+\]
+
 " supertab
 let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:SuperTabCrMapping = 0

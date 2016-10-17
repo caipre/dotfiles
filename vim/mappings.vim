@@ -33,4 +33,7 @@ nnoremap Y             y$
 nnoremap j             gj
 nnoremap k             gk
 
+xnoremap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
+
 map Q <nop>
