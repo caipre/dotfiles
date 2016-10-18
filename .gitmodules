@@ -4,3 +4,6 @@
 [submodule "zsh/autoenv"]
 	path = zsh/autoenv
 	url = git@github.com:horosgrisa/autoenv.git
+[submodule "zsh/autosuggest"]
+	path = zsh/autosuggest
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
