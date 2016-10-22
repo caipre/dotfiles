@@ -122,6 +122,9 @@ highlight cssTextProp                ctermfg=073     ctermbg=none     cterm=none
 "ighlight diffAdded                  ctermfg=075     ctermbg=none     cterm=bold
 "ighlight diffRemoved                ctermfg=red     ctermbg=none     cterm=bold
 
+" haskell
+highlight haskellDeclKeyword         ctermfg=067     ctermbg=none     cterm=bold
+
 " html
 highlight htmlTag                    ctermfg=238     ctermbg=none     cterm=bold
 highlight htmlEndTag                 ctermfg=238     ctermbg=none     cterm=bold
@@ -177,7 +180,10 @@ highlight phpStatement               ctermfg=072     ctermbg=none     cterm=none
 "ighlight rustConditional            ctermfg=035     ctermbg=none     cterm=none
 "ighlight rustKeyword                ctermfg=035     ctermbg=none     cterm=none
 "ighlight rustSigil                  ctermfg=237     ctermbg=none     cterm=bold
+highlight ruststorage                ctermfg=029     ctermbg=none     cterm=none
 
 " sh
 "ighlight shSet                      ctermfg=035     ctermbg=none     cterm=none
 "ighlight shFunctionKey              ctermfg=035     ctermbg=none     cterm=none
+""" Plugins
+highlight link SneakPluginTarget IncSearch
