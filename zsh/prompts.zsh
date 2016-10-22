@@ -12,5 +12,3 @@ function long_prompt () {
    LONG_PROMPT=true
 }
 long_prompt
-
-zle_highlight=(isearch:fg=cyan,underline)
