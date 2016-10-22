@@ -12,3 +12,4 @@ vim/view
 
 zsh/.histfile*
 zsh/.zcompdump
+weechat/script/plugins.xml.gz
