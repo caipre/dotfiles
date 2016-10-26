@@ -45,6 +45,11 @@ let g:ctrlp_working_path_mode = 'raw'
 let g:ctrlp_funky_sort_by_mru = 1
 let g:ctrlp_funky_syntax_highlight = 1
 
+" diff-enhanced
+if &diff
+   let &diffexpr='EnhancedDiff#Diff("git diff", "--diff-algorithm=patience")'
+endif
+
 " delimitmate
 let g:delimitMate_expand_cr = 1
 
@@ -108,5 +113,5 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " youcompleteme
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+"let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
