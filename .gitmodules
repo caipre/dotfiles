@@ -1,6 +1,3 @@
-[submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
-	url = git@github.com:VundleVim/Vundle.vim.git
 [submodule "zsh/autoenv"]
 	path = zsh/autoenv
 	url = git@github.com:horosgrisa/autoenv.git
