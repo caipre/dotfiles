@@ -1,4 +1,4 @@
-all:: gdb git inputrc mutt ranger terminfo tmux vim zsh
+all:: git inputrc ranger tmux vim zsh
 
 clean::
 	rm -f ${HOME}/.gdbinit
