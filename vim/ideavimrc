@@ -1,0 +1,6 @@
+set hlsearch
+set ignorecase
+set incsearch
+set scrolloff=5
+set smartcase
+set surround
