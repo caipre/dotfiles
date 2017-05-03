@@ -11,30 +11,5 @@ source $HOME/.zsh/options.zsh
 source $HOME/.zsh/prompts.zsh
 source $HOME/.zsh/widgets.zsh
 
-
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
-
-# SSH Agent
-function agent-active source-agent () {
-   source ~/.ssh/agent.$HOST &>/dev/null
-   ssh-add -l &>/dev/null
-}
-
-function agent-status () {
-   if agent-active; then
-      echo "active"
-   elif pidof ssh-agent &>/dev/null; then
-      echo "active, disconnected"
-   else
-      echo "inactive"
-   fi
-}
-
-function start-agent () {
-   if agent-active; then return; fi
-   (umask 0077; ssh-agent >~/.ssh/agent.$HOST)
-   source ~/.ssh/agent.$HOST &>/dev/null
-   ssh-add ~/.ssh/{ssh,*.{rsa,pem,ed25519}} &>/dev/null
-}
-source-agent
 zle_highlight=(isearch:fg=cyan)
