@@ -1,3 +1,0 @@
-[submodule "zsh/autoenv"]
-	path = zsh/autoenv
-	url = git@github.com:horosgrisa/autoenv.git

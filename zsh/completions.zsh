@@ -2,7 +2,7 @@
 # Author: Nick Platt
 
 fpath=($HOME/.zsh /usr/local/share/zsh/site-functions $fpath)
-autoload -U compinit && compinit -d $HOME/.zsh/.zcompdump
+autoload -U compinit
 
 # Case insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'

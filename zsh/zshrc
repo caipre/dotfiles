@@ -11,7 +11,6 @@ source $HOME/.zsh/options.zsh
 source $HOME/.zsh/prompts.zsh
 source $HOME/.zsh/widgets.zsh
 
-#source $HOME/.zsh/autoenv/autoenv.plugin.zsh
 
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 
@@ -38,3 +37,4 @@ function start-agent () {
    ssh-add ~/.ssh/{ssh,*.{rsa,pem,ed25519}} &>/dev/null
 }
 source-agent
+zle_highlight=(isearch:fg=cyan)
