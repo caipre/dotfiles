@@ -16,6 +16,13 @@ function mkmv () {
       echo '   Make a directory and move file(s) into it';
    else
       mkdir -p "$1"; mv "$@[2,-1]" "$1";
+
+function copy () {
+   if [[ $# -ne 1 ]]; then
+      echo 'usage: copy <file>'
+      echo '   copy file contents to system clipboard'
+   else
+      cat "$1" | pbcopy
    fi
 }
 
