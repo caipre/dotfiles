@@ -3,7 +3,7 @@
    email = platt.nicholas@gmail.com
    signingkey = CFF39E32
 [alias]
-   lg = log --pretty=tformat:'%C(yellow)%h%C(reset)  %C(bold black)%<(12,trunc)%an%C(reset)  %<(80,trunc)%s'
+   lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(bold black)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
    can = commit --amend --no-edit
    stat = show --stat
    tags = tag -l
