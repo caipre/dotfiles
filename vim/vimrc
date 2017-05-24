@@ -7,9 +7,6 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
-Plug 'pbrisbin/vim-colors-off'
-
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
@@ -23,7 +20,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'derekwyatt/vim-fswitch'
 Plug 'embear/vim-localvimrc'
 "lugin 'ervandew/supertab'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'honza/vim-snippets'
 Plug 'jtdowney/vimux-cargo'
 Plug 'junegunn/goyo.vim'
@@ -32,6 +29,7 @@ Plug 'justinmk/vim-sneak'
 "lugin 'majutsushi/tagbar'
 Plug 'parkr/vim-jekyll'
 Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rust'
 Plug 'sheerun/vim-polyglot'
 "lugin 'tacahiroy/ctrlp-funky'
 Plug 'terryma/vim-multiple-cursors'

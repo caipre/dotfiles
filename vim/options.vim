@@ -4,7 +4,7 @@
 set autoindent
 set backspace=indent,eol,start
 set complete=.,w,b,i,t
-set completeopt=menu,preview
+set completeopt=menu
 set cursorline
 set diffopt=filler,iwhite
 set expandtab

@@ -4,7 +4,6 @@
 " ctrlp
 let g:ctrlp_by_filename = 1
 let g:ctrlp_cache_dir = $HOME.'/.vim/ctrlp-cache'
-let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_extensions = ['funky', 'tag', 'dir']
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_max_files = 1000000
@@ -107,11 +106,9 @@ let g:tagbar_type_rust = {
 let g:togglecursor_leave = 'line'
 
 " ultisnips
-let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsExpandTrigger = '<c-space>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " youcompleteme
 let g:ycm_collect_identifiers_from_tags_files = 1
-"let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
-"let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
