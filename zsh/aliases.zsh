@@ -7,6 +7,7 @@ alias g='grep'
 alias grep='grep -P --color=always'
 alias Less=less
 alias ll='ls -lahF --group-directories-first --time-style long-iso --color'
+alias l=ll
 alias mkdir='mkdir -p'
 #lias mv='mv --no-clobber'
 alias q=exit
