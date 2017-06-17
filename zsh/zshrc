@@ -1,6 +1,3 @@
-# zshrc
-# Author: Nick Platt
-
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/bindkeys.zsh
 source $HOME/.zsh/colors.zsh

@@ -1,6 +1,3 @@
-# prompts.zsh
-# Author: Nick Platt
-
 autoload -U colors && colors
 function short_prompt () {
    PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} "

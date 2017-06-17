@@ -1,6 +1,3 @@
-# bindkeys.zsh
-# Author: Nick Platt
-
 bindkey -v
 
 bindkey "^[[1~" beginning-of-line

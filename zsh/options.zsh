@@ -1,6 +1,3 @@
-# options.zsh
-# Author: Nick Platt
-
 # Directories
 setopt auto_cd
 setopt auto_pushd

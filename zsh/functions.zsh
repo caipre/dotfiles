@@ -1,6 +1,3 @@
-# functions.zsh
-# Author: Nick Platt
-
 function mkcd () {
    if [[ $# -ne 1 ]]; then
       echo 'usage: mkcd <dir>'

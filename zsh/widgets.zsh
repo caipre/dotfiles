@@ -1,6 +1,3 @@
-# widgets.zsh
-# Author: Nick Platt
-
 function set_cursor_style () {
    if [[ $(tput colors) -eq 8 ]]; then
       case "$1" in

@@ -1,6 +1,3 @@
-# completions.zsh
-# Author: Nick Platt
-
 fpath=($HOME/.zsh /usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit
 

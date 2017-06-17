@@ -1,6 +1,3 @@
-# aliases.zsh
-# Author: Nick Platt
-
 alias ..='cd ..'
 alias diff='diff -s'
 alias g='grep'
