@@ -51,6 +51,7 @@ endif
 
 " delimitmate
 let g:delimitMate_expand_cr = 1
+au FileType rust let b:delimitMate_quotes = "\" `"
 
 " goyo
 let g:goyo_width = 168
