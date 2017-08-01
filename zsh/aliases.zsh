@@ -9,6 +9,7 @@ alias sun='sort | uniq -c | sort -rn'
 alias vi=vim
 
 # git
+alias git='hub'
 alias br='git branch'
 alias co='git checkout'
 alias di='git diff --color'
