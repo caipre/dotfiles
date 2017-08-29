@@ -57,3 +57,7 @@ if v:version >= 703
    set formatoptions+=j
    set mouse=a
 endif
+
+if has('mouse_sgr')
+   set ttymouse=sgr
+endif
