@@ -54,7 +54,7 @@ let g:delimitMate_expand_cr = 1
 au FileType rust let b:delimitMate_quotes = "\" `"
 
 " goyo
-let g:goyo_width = 168
+let g:goyo_width = 80
 let g:goyo_margin_top = 0
 let g:goyo_margin_bottom = 0
 let g:goyo_linenr = 1
@@ -110,6 +110,9 @@ let g:togglecursor_leave = 'line'
 let g:UltiSnipsExpandTrigger = '<c-space>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+" vim-go
+let g:go_fmt_command = "goimports"
 
 " youcompleteme
 let g:ycm_collect_identifiers_from_tags_files = 1

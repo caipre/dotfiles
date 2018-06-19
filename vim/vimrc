@@ -4,9 +4,9 @@
 set nocompatible
 filetype off
 
-set runtimepath+=~/.vim/bundle/Vundle.vim
 call plug#begin('~/.vim/plugged')
 
+Plug 'ayu-theme/ayu-vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
@@ -48,6 +48,9 @@ syntax on
 filetype plugin on
 filetype indent on
 colorscheme atlas
+if has('gui_running')
+   colorscheme ayu
+endif
 
 source $HOME/.vim/functions.vim
 source $HOME/.vim/mappings.vim
@@ -66,7 +69,7 @@ augroup _
    autocmd InsertLeave * let &updatetime=updaterestore
 
    " Remove trailing whitespace on write
-   autocmd BufWritePre * :call TrimTrailingWhitespace()
+   "autocmd BufWritePre * :call TrimTrailingWhitespace()
 
    " Disable paste mode on exit insert mode
    autocmd InsertLeave * :set nopaste

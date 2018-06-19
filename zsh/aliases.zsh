@@ -13,8 +13,9 @@ alias git='hub'
 alias br='git branch'
 alias co='git checkout'
 alias di='git diff --color'
-alias lg='git lg -n10 --first-parent'
+alias lg='git lg -n10'
 alias st='git status'
+alias gita=git
 
 # tmux
 alias tmux='\tmux -f ~/.tmux.conf -L main'

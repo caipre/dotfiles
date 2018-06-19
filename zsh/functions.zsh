@@ -1,3 +1,8 @@
+function sshw () {
+   while ! nc -z "$1" 22; do sleep 2; done
+   ssh "$1"
+}
+
 function mkcd () {
    if [[ $# -ne 1 ]]; then
       echo 'usage: mkcd <dir>'

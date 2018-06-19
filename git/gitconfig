@@ -2,10 +2,10 @@
    name = Nick Platt
    email = platt.nicholas@gmail.com
    signingkey = E06ABC4FF0A690FC
-[includeIf "gitdir:~/code/spotify/"]
-   path = ~/.gitconfig.spotify
-[includeIf "gitdir:~/code/github/spotify/"]
-   path = ~/.gitconfig.spotify
+[include]
+   path = ~/.gitconfig.profile
+[includeIf "gitdir:~/code/github/caipre/"]
+   path = ~/.gitconfig.personal
 [alias]
    lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(bold black)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
    can = commit --amend --no-edit
