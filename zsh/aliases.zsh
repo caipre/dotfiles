@@ -11,7 +11,7 @@ alias vi=vim
 # git
 alias git='hub'
 alias br='git branch'
-alias co='git checkout'
+alias co='git checkout --recurse-submodules'
 alias di='git diff --color'
 alias lg='git lg -n10'
 alias st='git status'
@@ -21,3 +21,6 @@ alias gita=git
 alias tmux='\tmux -f ~/.tmux.conf -L main'
 alias ntmux='TMUX_NESTED=1 \tmux -f ~/.ntmux.conf -L nested'
 alias rtmux='TMUX_REMOTE=1 \tmux -f ~/.rtmux.conf -L remote'
+
+# pyenv
+alias pyrm='pyenv virtualenv-delete'

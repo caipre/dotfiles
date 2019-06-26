@@ -1,3 +1,10 @@
+function pyv() {
+   local name="$1"
+   local version="${2:-3.7.1}"
+   pyenv virtualenv "${version}" "${name}" && \
+      pyenv activate "${name}"
+}
+
 function sshw () {
    while ! nc -z "$1" 22; do sleep 2; done
    ssh "$1"

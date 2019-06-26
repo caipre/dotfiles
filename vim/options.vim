@@ -5,7 +5,7 @@ set autoindent
 set backspace=indent,eol,start
 set complete=.,w,b,i,t
 set completeopt=menu
-set cursorline
+"et cursorline
 set diffopt=filler,iwhite
 set expandtab
 set fileformat=unix

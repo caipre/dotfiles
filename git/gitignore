@@ -1,4 +1,11 @@
-.vscode/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+/.idea
+/build-secrets
+
+/.token*
+/.vscode/
 !.gitkeep
 
 # vim
@@ -9,6 +16,7 @@
 
 # python
 __pycache__/
+.pytest_cache/
 *.py[cod]
 
 # c / c++
@@ -44,3 +52,6 @@ tags
 # misc
 .DS_Store
 .env
+
+# java
+/target
