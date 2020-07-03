@@ -1,4 +1,4 @@
-set hlsearch
+"set hlsearch
 set ignorecase
 set incsearch
 set scrolloff=5

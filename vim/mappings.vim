@@ -13,6 +13,7 @@ nnoremap <silent> <leader>h :set hlsearch!<CR>
 nnoremap <silent> <leader>p :set paste!<CR>
 nnoremap <silent> <leader>t :tnext<CR>
 nnoremap <silent> <leader>w :set list!<CR>
+nnoremap <silent> <leader>d <C-r>=strftime('%F')<CR>
 
 vnoremap <silent> <leader>s :sort<CR>
 
