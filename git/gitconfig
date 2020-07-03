@@ -7,18 +7,22 @@
 [includeIf "gitdir:~/code/github/caipre/"]
    path = ~/.gitconfig.personal
 [alias]
-   lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(bold black)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
-   can = commit --amend --no-edit
-   stat = show --stat
-   tags = tag -l
-   branches = branch -vv
-   remotes = remote -v
+   amend = commit --amend
    blameless = blame
+   branches = branch -vv
+   can = commit --amend --no-edit
+   lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(bold black)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
+   pushf = push --force-with-lease
+   remotes = remote -v
+   stat = show --stat
+   sub = submodule update --init --recursive
+   subf = submodule update --init --checkout --force --recursive
+   tags = tag -l
    up = !git fetch && git rebase && git sub
-   sub = submodule update --init --checkout --force --recursive
 [color]
    ui = always
 [core]
+   commitGraph = true
    excludesfile = ~/.gitignore
    pager = less -FXRi && echo
 [diff]
@@ -26,7 +30,7 @@
 [pull]
    rebase = true
 [push]
-   default = current
+	default = simple
 [fetch]
    prune = true
    pruneTags = true
