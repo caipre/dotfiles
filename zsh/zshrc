@@ -1,6 +1,5 @@
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/bindkeys.zsh
-source $HOME/.zsh/colors.zsh
 source $HOME/.zsh/completions.zsh
 source $HOME/.zsh/exports.zsh
 source $HOME/.zsh/functions.zsh
