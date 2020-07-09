@@ -30,7 +30,7 @@
 [pull]
    rebase = true
 [push]
-	default = simple
+   default = current
 [fetch]
    prune = true
    pruneTags = true
