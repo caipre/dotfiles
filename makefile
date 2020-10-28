@@ -9,7 +9,7 @@ clean::
 	rm -f ${HOME}/.{,n,r}tmux.conf
 	rm -rf ${HOME}/.config/ranger
 	rm -rf ${HOME}/.terminfo
-	rm -rf ${HOME}/.vim ${HOME}/.vimrc ${HOME}/.ideavimrc
+	rm -rf ${HOME}/.vim ${HOME}/.vimrc ${HOME}/.ideavimrc ${HOME}/.gvimrc
 	rm -rf ${HOME}/.zsh ${HOME}/.zshrc
 
 gdb::
@@ -45,6 +45,7 @@ tmux::
 vim::
 	ln -sf ${PWD}/vim ${HOME}/.vim
 	ln -sf ${PWD}/vim/vimrc ${HOME}/.vimrc
+	ln -sf ${PWD}/vim/gvimrc ${HOME}/.gvimrc
 
 ideavim::
 	ln -sf ${PWD}/vim/ideavimrc ${HOME}/.ideavimrc
