@@ -1,6 +1,9 @@
 export GPG_TTY=$(tty)
 export GOPATH=$HOME/gocode
 
+# for pyenv integration with YouCompleteMe
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
+
 # History control
 export HISTFILE="${HOME}/.zsh/.histfile"
 export HISTSIZE=10000

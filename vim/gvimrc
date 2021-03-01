@@ -1,4 +1,4 @@
-set columns=80
+set columns=100
 set guifont=Monaco:h16
 set guioptions=
 set lines=40
