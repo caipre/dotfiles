@@ -9,3 +9,7 @@ source $HOME/.zsh/widgets.zsh
 
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zle_highlight=(isearch:fg=cyan)
+
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

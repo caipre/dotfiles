@@ -23,7 +23,7 @@
    ui = always
 [core]
    commitGraph = true
-   excludesfile = ~/.gitignore
+   excludesfile = /Users/nickplatt/.gitignore
    pager = less -FXRi && echo
 [diff]
    statGraphWidth = 20
@@ -39,9 +39,9 @@
 [rerere]
    enabled = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+   clean = git-lfs clean -- %f
+   smudge = git-lfs smudge -- %f
+   process = git-lfs filter-process
+   required = true
 [init]
-	defaultBranch = main
+   defaultBranch = main
