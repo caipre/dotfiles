@@ -1,40 +1,8 @@
 function set_cursor_style () {
-   if [[ $(tput colors) -eq 8 ]]; then
-      case "$1" in
-         "vertical-bar") local csi='' ;;
-         "block")        local csi='' ;;
-      esac
-   elif [[ -n "${PUTTY}" ]]; then
-      case "$1" in
-         "vertical-bar") local csi='\033[=1c' ;;
-         "block")        local csi='\033[=2c' ;;
-      esac
-   else
-      case "$1" in
-         "vertical-bar") local csi='\033[5 q' ;;
-         "block")        local csi='\033[2 q' ;;
-      esac
-   fi
-
-   tmux_escape "${csi}"
-}
-
-function tmux_escape () {
-   local csi="$1"
-
-   if [[ -n "${TMUX}" ]]; then
-      csi='\033Ptmux;'${csi//'\033'/'\033\033'}'\033\134'
-   fi
-
-   if [[ -n "${TMUX_NESTED}" ]]; then
-      csi='\033Ptmux;'${csi//'\033'/'\033\033'}'\033\134'
-   fi
-
-   if [[ -n "${TMUX_REMOTE}" ]]; then
-      csi='\033Ptmux;'${csi//'\033'/'\033\033'}'\033\134'
-   fi
-
-   print -n "${csi}";
+   case "$1" in
+      "vertical-bar") printf '\033[5 q' ;;
+      "block")        printf '\033[2 q' ;;
+   esac
 }
 
 function set_man_width () {

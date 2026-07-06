@@ -1,20 +1,3 @@
-function bk() {
-   local name="$1"
-   mv "${name}" "${name}.bk"
-}
-
-function pyv() {
-   local name="$1"
-   local version="$2"
-   pyenv virtualenv "${version}" "${name}" && \
-      pyenv activate "${name}"
-}
-
-function sshw () {
-   while ! nc -z "$1" 22; do sleep 2; done
-   ssh "$1"
-}
-
 function mkcd () {
    if [[ $# -ne 1 ]]; then
       echo 'usage: mkcd <dir>'
@@ -58,37 +41,4 @@ function h () {
 
 function fields () {
    awk '{for (i = 1; i <= NF; i++) { printf("%2d: %s\n", i, $i) }}'
-}
-
-function clrs () {
-   colors=$(tput colors)
-
-   local i=0
-   for r in {0..1}; do
-      for c in {0..7}; do
-         local code=$(( 30+$c ))
-         printf "\033[$r;${code}m%02d\033[39m " $i
-         ((i+=1))
-      done
-      print
-   done
-
-   if [[ $colors -le 8 ]]; then
-      return;
-   fi
-
-   for r in {0..5}; do
-      for c in {0..35}; do
-         local code=$(( 16+($r*36)+$c ))
-         printf "\033[38;5;${code}m%03d\033[39m " $code
-      done
-      print
-   done
-
-   for c in {0..23}; do
-      local code=$(( 232+$c ))
-      printf "\033[38;5;${code}m%03d\033[39m " $code
-   done
-
-   print
 }

@@ -1,31 +1,33 @@
 [user]
    name = Nick Platt
-   email = platt.nicholas@gmail.com
-   signingkey = E06ABC4FF0A690FC
-[include]
-   path = ~/.gitconfig.profile
-[includeIf "gitdir:~/code/github/caipre/"]
+[includeIf "gitdir:~/code/github/"]
    path = ~/.gitconfig.personal
+[includeIf "gitdir:~/code/spotify/"]
+   path = ~/.gitconfig.work
+[gpg]
+   format = ssh
+[gpg "ssh"]
+   program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+   gpgsign = true
+[tag]
+   gpgsign = true
 [alias]
    amend = commit --amend
-   blameless = blame
    branches = branch -vv
    can = commit --amend --no-edit
    lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(blue)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
    pushf = push --force-with-lease
    remotes = remote -v
    stat = show --stat
-   sub = submodule update --init --recursive
-   subf = submodule update --init --checkout --force --recursive
    tags = tag -l
-   up = !git fetch && git rebase && git sub
+   up = !git fetch && git rebase
    brrm = !git branch --no-color --merged | rg -v '(^\\*|master|main|dev)' | xargs -r git branch -d
 [color]
-   ui = always
+   ui = auto
 [core]
-   commitGraph = true
    excludesfile = /Users/nickplatt/.gitignore
-   pager = less -FXRi && echo
+   pager = less -FXRi
 [diff]
    statGraphWidth = 20
 [pull]
@@ -35,8 +37,6 @@
 [fetch]
    prune = true
    pruneTags = true
-[commit]
-	gpgsign = true
 [rerere]
    enabled = true
 [filter "lfs"]
@@ -46,12 +46,3 @@
    required = true
 [init]
    defaultBranch = main
-[gpg]
-	program = /opt/homebrew/bin/gpg
-#[merge]
-   #conflictstyle = zdiff3
-[maintenance]
-	repo = /Users/nickplatt/code/spotify/services-pilot
-	repo = /Users/nickplatt/code/spotify/services-pilot-b
-	repo = /Users/nickplatt/code/spotify/services-pilot-a
-	repo = /Users/nickplatt/code/spotify/services-pilot-c

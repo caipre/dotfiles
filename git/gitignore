@@ -1,14 +1,12 @@
-/.ignore/
 */.claude/
-
-###
+**/.claude/settings.local.json
+**/.claude/.cc-writes/
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
 *.iml
 .idea/
-/build-secrets
 
 /.token*
 /.vscode/
@@ -25,43 +23,26 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 
-# c / c++
+# compiled
 *.o
 *.ko
 *.elf
-
-*.lib
 *.a
-*.la
-*.lo
-
-*.dll
 *.so
 *.so.*
 *.dylib
-*.rlib
-
 *.exe
 *.out
-*.app
 
-# development
+# build
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
 cmake_install.cmake
 install_manifest.txt
-
 tags
 .ctags
 
 # misc
 .DS_Store
 .env
-
-# java
-/target
-
-**/.claude/settings.local.json
-
-**/.claude/.cc-writes/

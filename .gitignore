@@ -1,16 +1,8 @@
 profiles/*
 !profiles/.gitkeep
 
-vim/.localvimrc_persistent
-vim/.netrwhist
 vim/.viminfo
-vim/autoload
-vim/ctrlp-cache
-vim/plugged
-vim/sessions
 vim/spell
-vim/view
 
 zsh/.histfile*
 zsh/.zcompdump
-weechat/script/plugins.xml.gz

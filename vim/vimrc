@@ -1,80 +1,64 @@
-" .vimrc
-" Author: Nick Platt
-
 set nocompatible
-filetype off
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Raimondi/delimitMate'
-Plug 'SirVer/ultisnips'
-Plug 'Spaceghost/vim-matchit'
-Plug 'ayu-theme/ayu-vim'
-Plug 'benmills/vimux' 
-Plug 'caipre/tabline.vim'
-Plug 'caipre/vim-togglecursor'
-Plug 'chrisbra/vim-diff-enhanced'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'derekwyatt/vim-fswitch'
-Plug 'embear/vim-localvimrc'
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'honza/vim-snippets'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'justinmk/vim-sneak'
-Plug 'mg979/vim-visual-multi'
-Plug 'parkr/vim-jekyll'
-Plug 'racer-rust/vim-racer'
-Plug 'rust-lang/rust.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-obsession'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-vinegar'
-Plug 'triglav/vim-visual-increment'
-Plug 'ycm-core/YouCompleteMe'
-"Plug 'ervandew/supertab'
-"Plug 'jtdowney/vimux-cargo'
-"Plug 'majutsushi/tagbar'
-"Plug 'tacahiroy/ctrlp-funky'
-"Plug 'tpope/vim-fugitive'
-
-call plug#end()
-
 syntax on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 colorscheme atlas
-if has('gui_running')
-   colorscheme ayu
+
+set autoindent
+set backspace=indent,eol,start
+set expandtab
+set fileformat=unix
+set hidden
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set linebreak
+set noswapfile
+set number
+set scrolloff=5
+set shiftround
+set shiftwidth=3
+set shortmess+=I
+set showcmd
+set showmatch
+set smartcase
+set smarttab
+set softtabstop=3
+set splitbelow
+set splitright
+set tabstop=3
+set textwidth=80
+set wildignorecase
+set wildmenu
+set wildmode=list:longest,full
+
+set listchars=tab:·-,trail:_,eol:¬,extends:»,precedes:«
+set fillchars=vert:│
+set statusline=File\ %F\ %m%r%=[%c\ \|\ %l/%L\ (%p%%)]
+
+if has('mouse')
+  set mouse=a
 endif
 
-source $HOME/.vim/functions.vim
-source $HOME/.vim/mappings.vim
-source $HOME/.vim/options.vim
-source $HOME/.vim/plugins.vim
+let mapleader = ","
+nnoremap <silent> <leader>, :nohlsearch<CR>
+nnoremap <silent> <leader>. :set spell!<CR>
+nnoremap <silent> <leader>w :set list!<CR>
+nnoremap <silent> <leader>p :set paste!<CR>
+nnoremap          <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+nnoremap Y     y$
+nnoremap j     gj
+nnoremap k     gk
+nnoremap <CR>  o<ESC>
+
+map Q <nop>
 
 augroup _
-   autocmd!
-
-   " Reload .vimrc on write
-   autocmd BufWritePost $HOME/.vimrc source $HOME/.vimrc
-
-   " Exit insert mode on idle
-   autocmd CursorHoldI * stopinsert
-   autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=30000
-   autocmd InsertLeave * let &updatetime=updaterestore
-
-   " Remove trailing whitespace on write
-   "autocmd BufWritePre * :call TrimTrailingWhitespace()
-
-   " Disable paste mode on exit insert mode
-   autocmd InsertLeave * :set nopaste
+  autocmd!
+  autocmd InsertLeave * set nopaste
 augroup END
-
-let g:mru_tab = 1
-nmap <leader>tl :exe "tabn ".g:mru_tab<CR>
-autocmd TabLeave * let g:mru_tab = tabpagenr()
