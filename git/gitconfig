@@ -22,12 +22,10 @@
    stat = show --stat
    tags = tag -l
    up = !git fetch && git rebase
-   brrm = !git branch --no-color --merged | rg -v '(^\\*|master|main|dev)' | xargs -r git branch -d
-[color]
-   ui = auto
+   brrm = !git branch --no-color --merged | rg -v '(^\\*|master|main|dev)' | xargs git branch -d
 [core]
-   excludesfile = /Users/nickplatt/.gitignore
-   pager = less -FXRi
+   excludesfile = ~/.gitignore
+   pager = less -FX
 [diff]
    statGraphWidth = 20
 [pull]

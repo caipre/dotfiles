@@ -1,6 +1,4 @@
-if [[ -n $BREW_PREFIX ]]; then
-  FPATH="$BREW_PREFIX/share/zsh/site-functions:${FPATH}"
-fi
+FPATH="/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh-completions:${FPATH}"
 
 autoload -Uz compinit
 if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then

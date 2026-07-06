@@ -5,6 +5,7 @@ clean::
 	rm -f ${HOME}/.ideavimrc
 	rm -rf ${HOME}/.config/ranger
 	rm -rf ${HOME}/.vim ${HOME}/.vimrc
+	rm -f ${HOME}/.zprofile
 	rm -rf ${HOME}/.zsh ${HOME}/.zshrc
 
 git::
@@ -27,4 +28,5 @@ vim::
 
 zsh::
 	ln -sf ${PWD}/zsh ${HOME}/.zsh
+	ln -sf ${PWD}/zsh/zprofile ${HOME}/.zprofile
 	ln -sf ${PWD}/zsh/zshrc ${HOME}/.zshrc

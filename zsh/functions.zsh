@@ -16,15 +16,6 @@ function mkmv () {
    fi
 }
 
-function copy () {
-   if [[ $# -ne 1 ]]; then
-      echo 'usage: copy <file>'
-      echo '   copy file contents to system clipboard'
-   else
-      cat "$1" | pbcopy
-   fi
-}
-
 function h () {
    local color="${2-blue}"
    case "${color}" in

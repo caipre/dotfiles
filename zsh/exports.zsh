@@ -1,8 +1,6 @@
-export GOPATH=$HOME/go
-
 export HISTFILE="${HOME}/.zsh/.histfile"
-export HISTSIZE=10000
-export SAVEHIST=10000
+export HISTSIZE=100000
+export SAVEHIST=100000
 
 export EDITOR='vim'
 export LANG=en_US.UTF-8

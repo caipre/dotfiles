@@ -1,9 +1,6 @@
-*/.claude/
-**/.claude/settings.local.json
-**/.claude/.cc-writes/
+.claude/
 
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+.ipynb_checkpoints/
 
 *.iml
 .idea/
@@ -22,26 +19,6 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
-
-# compiled
-*.o
-*.ko
-*.elf
-*.a
-*.so
-*.so.*
-*.dylib
-*.exe
-*.out
-
-# build
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-cmake_install.cmake
-install_manifest.txt
-tags
-.ctags
 
 # misc
 .DS_Store
