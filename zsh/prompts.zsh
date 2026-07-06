@@ -5,7 +5,7 @@ function short_prompt () {
 }
 
 function long_prompt () {
-   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %{$fg_bold[black]%}%~%{$reset_color%} "
+   PROMPT="%{$fg_bold[white]%}%(!.#.$)%{$reset_color%} %F{240}%~%f "
    LONG_PROMPT=true
 }
 long_prompt

@@ -5,7 +5,7 @@ function bk() {
 
 function pyv() {
    local name="$1"
-   local version="${2:-3.7.1}"
+   local version="$2"
    pyenv virtualenv "${version}" "${name}" && \
       pyenv activate "${name}"
 }

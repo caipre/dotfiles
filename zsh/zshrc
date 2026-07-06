@@ -1,8 +1,14 @@
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+BREW_PREFIX="/opt/homebrew"
+
+source "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/bindkeys.zsh
+
+# Docker CLI completions (fpath must be set before compinit)
+fpath=(/Users/nickplatt/.docker/completions $fpath)
+
 source $HOME/.zsh/completions.zsh
 source $HOME/.zsh/exports.zsh
 source $HOME/.zsh/functions.zsh
@@ -13,6 +19,41 @@ source $HOME/.zsh/widgets.zsh
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 zle_highlight=(isearch:fg=cyan)
 
-eval "$(rbenv init - zsh)"
+#eval "$(rbenv init - zsh)"
 eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+
+# Lazy-load pyenv-virtualenv (deferred to first prompt)
+_lazy_pyenv_virtualenv() {
+  eval "$(pyenv virtualenv-init -)"
+  precmd_functions=(${precmd_functions:#_lazy_pyenv_virtualenv})
+}
+precmd_functions+=(_lazy_pyenv_virtualenv)
+
+# Lazy-load sdkman
+export SDKMAN_DIR="$HOME/.sdkman"
+_lazy_sdkman() {
+  unset -f sdk java javac gradle kotlin maven groovy scala
+  [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+}
+sdk() { _lazy_sdkman; sdk "$@"; }
+java() { _lazy_sdkman; java "$@"; }
+javac() { _lazy_sdkman; javac "$@"; }
+gradle() { _lazy_sdkman; gradle "$@"; }
+kotlin() { _lazy_sdkman; kotlin "$@"; }
+maven() { _lazy_sdkman; maven "$@"; }
+groovy() { _lazy_sdkman; groovy "$@"; }
+scala() { _lazy_sdkman; scala "$@"; }
+
+export PATH=/opt/spotify-devex/bin:$PATH
+
+# Lazy-load nvm
+export NVM_DIR="$HOME/.nvm"
+_lazy_nvm() {
+  unset -f nvm node npm npx
+  [ -s "$BREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$BREW_PREFIX/opt/nvm/nvm.sh"
+  [ -s "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
+}
+nvm() { _lazy_nvm; nvm "$@"; }
+node() { _lazy_nvm; node "$@"; }
+npm() { _lazy_nvm; npm "$@"; }
+npx() { _lazy_nvm; npx "$@"; }

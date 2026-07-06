@@ -11,7 +11,7 @@
    blameless = blame
    branches = branch -vv
    can = commit --amend --no-edit
-   lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(bold black)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
+   lg = log --pretty=tformat:'%C(yellow)%h%C(reset) %C(blue)%<(10,trunc)%an%C(reset) %<(50,trunc)%s'
    pushf = push --force-with-lease
    remotes = remote -v
    stat = show --stat
@@ -19,7 +19,7 @@
    subf = submodule update --init --checkout --force --recursive
    tags = tag -l
    up = !git fetch && git rebase && git sub
-   brrm = !git branch --no-color --merged | rg -v '(^\\*|master|main|dev)' | xargs git branch -d
+   brrm = !git branch --no-color --merged | rg -v '(^\\*|master|main|dev)' | xargs -r git branch -d
 [color]
    ui = always
 [core]
@@ -50,3 +50,8 @@
 	program = /opt/homebrew/bin/gpg
 #[merge]
    #conflictstyle = zdiff3
+[maintenance]
+	repo = /Users/nickplatt/code/spotify/services-pilot
+	repo = /Users/nickplatt/code/spotify/services-pilot-b
+	repo = /Users/nickplatt/code/spotify/services-pilot-a
+	repo = /Users/nickplatt/code/spotify/services-pilot-c
