@@ -1,4 +1,17 @@
 set nocompatible
+filetype off
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
+
+call plug#end()
+
 syntax on
 filetype plugin indent on
 colorscheme atlas
@@ -46,6 +59,8 @@ nnoremap <silent> <leader>. :set spell!<CR>
 nnoremap <silent> <leader>w :set list!<CR>
 nnoremap <silent> <leader>p :set paste!<CR>
 nnoremap          <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+nnoremap <silent> <leader>f :Files<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
 
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j

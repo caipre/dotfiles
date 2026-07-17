@@ -1,7 +1,10 @@
 profiles/*
 !profiles/.gitkeep
 
+vim/.netrwhist
 vim/.viminfo
+vim/autoload
+vim/plugged
 vim/spell
 
 zsh/.histfile*
