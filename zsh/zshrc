@@ -10,3 +10,4 @@ source $HOME/.zsh/widgets.zsh
 zle_highlight=(isearch:fg=cyan)
 
 eval "$(mise activate zsh)"
+export PATH=/opt/spotify-devex/bin:$PATH

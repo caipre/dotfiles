@@ -14,4 +14,3 @@ bindkey "^[[4~" end-of-line
 
 bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
-
